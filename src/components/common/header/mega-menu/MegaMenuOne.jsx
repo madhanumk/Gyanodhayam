@@ -145,6 +145,24 @@ const MegaMenuOne = () => {
                             <span>Second Sem</span>
                           </CustomLink>
                         </li>
+
+                        <li>
+                          <CustomLink
+                            to="/teachers-practice-course"
+                            className="dropdown-item"
+                          >
+                            <span>Teachers Practice Course</span>
+                          </CustomLink>
+                        </li>
+                        
+                        <li>
+                          <CustomLink
+                            to="/guru-practice-course"
+                            className="dropdown-item"
+                          >
+                            <span>Guru Practice Course</span>
+                          </CustomLink>
+                        </li>
                       {/* ))} */}
                     </ul>
                   </div>

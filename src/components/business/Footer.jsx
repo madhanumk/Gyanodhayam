@@ -9,10 +9,10 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 const Footer = () => {
 
-  useEffect(() => {
-    AOS.init(); // Initialize AOS when the component mounts
-  }, []);
-
+  // useEffect(() => {
+  //   AOS.init(); // Initialize AOS when the component mounts
+  // }, []);
+  AOS.init();
 
   return (
     <div className="container mt-30 " >

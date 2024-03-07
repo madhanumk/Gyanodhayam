@@ -1,29 +1,27 @@
 import React from "react";
 import jai_guruji1 from "../../assets/images/sec-1.jpg";
-import udal from "../../assets/images/Courses/education/course-1st-sem/img-1.jpg";
-import udal_pathugapu from "../../assets/images/Courses/education/course-1st-sem/img-2.jpg";
-import unavu from "../../assets/images/Courses/education/course-1st-sem/img-3.jpg";
-import nalan from "../../assets/images/Courses/education/course-1st-sem/img-4.jpg";
-import exam from "../../assets/images/Courses/education/course-1st-sem/img-5.jpg";
-import kelvi from "../../assets/images/Courses/education/course-1st-sem/img-6.jpg";
-import unmai from "../../assets/images/Courses/education/course-1st-sem/img-7.jpg";
-import nalam_vazha from "../../assets/images/Courses/education/course-1st-sem/img-8.jpg";
-import udal_payirchi from "../../assets/images/Courses/education/course-1st-sem/img-9.jpg";
-import muthiraigal from "../../assets/images/Courses/education/course-1st-sem/img-10.jpg";
-import aasana from "../../assets/images/Courses/education/course-1st-sem/img-11.jpg";
-
 import flower_1 from "../../assets/images/flower-1.jpg";
 import flower_2 from "../../assets/images/flower-2.jpg";
 import flower_3 from "../../assets/images/flower-3.jpg";
 import flower_4 from "../../assets/images/flower-4.jpg";
-
 import manam from "../../assets/images/Courses/education/course-2nd-sem/img-1.png";
 import guru from "../../assets/images/Courses/education/course-2nd-sem/img-2.jpg";
 import thavam from "../../assets/images/Courses/education/course-2nd-sem/img-3.jpg";
 import karma from "../../assets/images/Courses/education/course-2nd-sem/img-4.jpg";
 import viva from "../../assets/images/Courses/education/course-2nd-sem/img-5.jpg";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Courses4 = () => {
+
+  
+  // useEffect(() => {
+  //   AOS.init(); // Initialize AOS when the component mounts
+  // }, []);
+
+  AOS.init();
+
   return (
     <>
       <div>
@@ -52,30 +50,42 @@ const Courses4 = () => {
           <img
             src={flower_1}
             alt="illustration"
-            className="sem1-flower-image-1"
-           
+            className="sem1-flower-image-1" 
+            data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
           />
-          <p className="first-sem-top text-align">
+          <p className="first-sem-top text-align" data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200">
             The Gyanodhayam Educational Trust syllabus is systematically divided
             into 10 subjects with their set of practical’s and is combined into
             a graduation course. The students who clear this exam are qualified
             to become a Gyanodhayam Educational Trust teacher.
           </p>
 
-          <h3 className="first-sem-header text-align">
+          <h3 className="first-sem-header text-align" data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200">
             Second Semester (12 Weeks)
           </h3>
           <div>
             <div className="row">
               <div className="col-lg-9 text-align order-lg-2">
-                <h4 className="first-side-header">
+                <h4 className="first-side-header" data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200">
                   Mana Guna Gyanam (Mind & Characteristics)
                 </h4>
-                <p className="first-sem-exam">
+                <p className="first-sem-exam" data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200">
                   <span style={{ fontWeight: "bold" }}>Written Exam :</span>
                   Manam + Gunam
                 </p>
-                <div style={{ paddingBottom: "20px" }}>
+                <div style={{ paddingBottom: "20px" }} data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200">
                   <h5 className="first-side-subHeader">Manam</h5>
                   <p className="second-sem-content">
                     Position of mind, the actions of the mind (nature of the
@@ -87,7 +97,9 @@ const Courses4 = () => {
                     to function properly).
                   </p>
                 </div>
-                <div style={{ paddingBottom: "20px" }}>
+                <div style={{ paddingBottom: "20px" }} data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200">
                   <h5 className="second-side-subHeader">Gunam</h5>
                   <ol className="second-sem-list">
                     <li>
@@ -106,7 +118,9 @@ const Courses4 = () => {
                     </li>
                   </ol>
                 </div>
-                <div style={{ paddingBottom: "20px" }}>
+                <div style={{ paddingBottom: "20px" }} data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200">
                   <h5 className="second-side-subHeader">Practical Exam</h5>
                   <ol className="second-sem-list">
                     <li>
@@ -121,7 +135,9 @@ const Courses4 = () => {
                   </ol>
                 </div>
               </div>
-              <div className="col-lg-3 sem1-images  order-lg-1">
+              <div className="col-lg-3 sem1-images  order-lg-1" data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200">
                 <img src={manam} alt="manam" className="width-100"/>
               </div>
             </div>
@@ -129,13 +145,19 @@ const Courses4 = () => {
             <div style={{ paddingBottom: "30px" }}>
               <div className="row">
                 <div className="col-lg-9 text-align order-lg-2">
-                  <h4 className="first-side-header">Guru Gyanam</h4>
-                  <p className="first-sem-exam">
+                  <h4 className="first-side-header" data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200">Guru Gyanam</h4>
+                  <p className="first-sem-exam" data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200">
                     <span style={{ fontWeight: "bold" }}>Written Exam :</span>{" "}
                     Guru + Steps towards God + Kailaagai + Guru Vaasam +
                     Ariyamugam
                   </p>
-                  <div style={{ paddingBottom: "20px" }}>
+                  <div style={{ paddingBottom: "20px" }} data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200">
                     <h5 className="second-side-subHeader">Guru</h5>
 
                     <p className="second-sem-content">
@@ -150,13 +172,17 @@ const Courses4 = () => {
                       Surrendering to Guru, Grace of Guru is the Grace of God
                     </p>
                   </div>
-                  <img
+                  <img 
                     src={flower_2}
                     alt="illustration"
                     className="sem1-flower-image-2"
-           
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    data-aos-duration="1200"
                   />
-                  <div style={{ paddingBottom: "20px" }}>
+                  <div style={{ paddingBottom: "20px" }} data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200">
                     <h5 className="second-side-subHeader">Steps towards God</h5>
                     <p className="second-sem-content">
                       It is the compilation of 365 thoughts on Physique, Mind,
@@ -165,7 +191,9 @@ const Courses4 = () => {
                       experience God in life.
                     </p>
                   </div>
-                  <div style={{ paddingBottom: "20px" }}>
+                  <div style={{ paddingBottom: "20px" }} data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200">
                     <h5 className="second-side-subHeader">Kailaagai</h5>
                     <p className="second-sem-content">
                       This is a handy guide. It is the collection of our
@@ -174,15 +202,19 @@ const Courses4 = () => {
                     </p>
                   </div>
 
-                  <div style={{ paddingBottom: "20px" }}>
-                    <h5 className="second-side-subHeader">Guru Vaasam</h5>
+                  <div style={{ paddingBottom: "20px" }} data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200">
+                    <h5 className="second-side-subHeader" >Guru Vaasam</h5>
                     <p className="second-sem-content">
                       It is the collection of valuable lessons from our Guruji.
                       A collection of advice given by Guruji to approach life in
                       a natural way
                     </p>
                   </div>
-                  <div style={{ paddingBottom: "20px" }}>
+                  <div style={{ paddingBottom: "20px" }} data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200">
                     <h5 className="second-side-subHeader">Ariyamugam</h5>
                     <p className="second-sem-content">
                       A collection of experiences of the disciples who travelled
@@ -191,7 +223,9 @@ const Courses4 = () => {
                       reading it.
                     </p>
                   </div>
-                  <div style={{ paddingBottom: "20px" }}>
+                  <div style={{ paddingBottom: "20px" }} data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200">
                     <h5 className="second-side-subHeader">Practical Exam</h5>
                     <p className="second-sem-content">
                       Discussion with Gurus, service activity and nature
@@ -199,7 +233,9 @@ const Courses4 = () => {
                     </p>
                   </div>
                 </div>
-                <div className="col-lg-3 sem1-images order-lg-1">
+                <div className="col-lg-3 sem1-images order-lg-1" data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200">
                   <img src={guru} alt="guru" className="width-100"/>
                 </div>
               </div>
@@ -207,7 +243,9 @@ const Courses4 = () => {
 
             <div style={{ paddingBottom: "30px" }}>
               <div className="row">
-                <div className="col-lg-9 text-align order-lg-2">
+                <div className="col-lg-9 text-align order-lg-2" data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200">
                   <h4 className="second-side-header">
                     Thava Gyanam (Meditation)
                   </h4>
@@ -235,7 +273,9 @@ const Courses4 = () => {
                     </p>
                   </div>
                 </div>
-                <div className="col-lg-3 sem1-images order-lg-1">
+                <div className="col-lg-3 sem1-images order-lg-1" data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200">
                   <img src={thavam} alt="thavam" className="width-100" />
                 </div>
               </div>
@@ -244,12 +284,18 @@ const Courses4 = () => {
             <div style={{ paddingBottom: "30px" }}>
               <div className="row">
                 <div className="col-lg-9 text-align order-lg-2">
-                  <h4 className="second-side-header">Karma Gyanam</h4>
-                  <p className="second-sem-exam">
+                  <h4 className="second-side-header" data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200">Karma Gyanam</h4>
+                  <p className="second-sem-exam" data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200">
                     <span style={{ fontWeight: "bold" }}>Written Exam:</span>{" "}
                     Karma + Ozhukkam
                   </p>
-                  <div style={{ paddingBottom: "20px" }}>
+                  <div style={{ paddingBottom: "20px" }} data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200">
                     <h5 className="second-side-subHeader">Karma</h5>
                     <p className="second-sem-content">
                       What is Karma? Its types, how is it stored? , thought and
@@ -260,10 +306,14 @@ const Courses4 = () => {
                   <img
                     src={flower_3}
                     alt="illustration"
-                    className="sem1-flower-image-3"
+                    className="sem1-flower-image-3" data-aos="fade-up"
+                    data-aos-delay="300"
+                    data-aos-duration="1200"
            
                   />
-                  <div style={{ paddingBottom: "20px" }}>
+                  <div style={{ paddingBottom: "20px" }} data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200">
                     <h5 className="second-side-subHeader">Ozhukkam</h5>
                     <p className="second-sem-content">
                       A set of methods and ethics for a man to live physically
@@ -279,14 +329,18 @@ const Courses4 = () => {
                       its usefulness.
                     </p>
                   </div>
-                  <div style={{ paddingBottom: "20px" }}>
+                  <div style={{ paddingBottom: "20px" }} data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200">
                     <h5 className="second-side-subHeader">Practical Exam</h5>
                     <p className="second-sem-content">
                       Karma Practical Test 1 and Karma Practical Test 2
                     </p>
                   </div>
                 </div>
-                <div className="col-lg-3 sem1-images order-lg-1">
+                <div className="col-lg-3 sem1-images order-lg-1" data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200">
                   <img src={karma} alt="karma" className="width-100" />
                 </div>
               </div>
@@ -295,7 +349,9 @@ const Courses4 = () => {
             <div style={{ paddingBottom: "30px" }}>
               <div className="row">
                
-                <div className="col-lg-9 text-align order-lg-2">
+                <div className="col-lg-9 text-align order-lg-2" data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200">
                   <h4 className="second-side-header">
                     Viva /Oral Exam (Practical Exam)
                   </h4>
@@ -319,7 +375,9 @@ const Courses4 = () => {
                     <h5 className="second-side-subHeader">Flame Test</h5>
                   </div>
                 </div>
-                <div className="col-lg-3 sem1-images order-lg-1">
+                <div className="col-lg-3 sem1-images order-lg-1" data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200">
                   <img src={viva} alt="viva" className="width-100" />
                 </div>
               </div>
@@ -327,12 +385,16 @@ const Courses4 = () => {
                 src={flower_4}
                 alt="illustration"
                 className="sem1-flower-image-4"
-           
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="1200"
               />
             </div>
 
             <div className="row">
-              <div className="col-lg-8 text-align">
+              <div className="col-lg-8 text-align" data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200">
                 <h4 className="first-side-header">
                   Rules and Regulations for Students:
                 </h4>

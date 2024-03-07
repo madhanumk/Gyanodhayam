@@ -1,28 +1,34 @@
 import React, { useRef, useState } from "react";
 import jai_guruji1 from "../../assets/images/sec-1.jpg";
-import body from "../../assets/images/Courses/education/trust-certificate-course/img-1.jpg"
-import yoga from "../../assets/images/Courses/education/trust-certificate-course/img-2.jpg"
-import food from "../../assets/images/Courses/education/trust-certificate-course/img-3.jpg"
-import mind from "../../assets/images/Courses/education/trust-certificate-course/img-4.jpg"
-import character from "../../assets/images/Courses/education/trust-certificate-course/img-5.jpg"
-import meditation from "../../assets/images/Courses/education/trust-certificate-course/img-6.jpg"
-import relationship from "../../assets/images/Courses/education/trust-certificate-course/img-7.jpg"
-import karma from "../../assets/images/Courses/education/trust-certificate-course/img-8.jpg"
-import soul from "../../assets/images/Courses/education/trust-certificate-course/img-9.jpg"
-import nobless from "../../assets/images/Courses/education/trust-certificate-course/img-10.jpg"
-import arts from "../../assets/images/Courses/education/trust-certificate-course/img-10.jpg"
-import services from "../../assets/images/Courses/education/trust-certificate-course/img-10.jpg"
-import mounam from "../../assets/images/Courses/education/trust-certificate-course/img-10.jpg"
+import body from "../../assets/images/Courses/education/trust-certificate-course/img-1.jpg";
+import yoga from "../../assets/images/Courses/education/trust-certificate-course/img-2.jpg";
+import food from "../../assets/images/Courses/education/trust-certificate-course/img-3.jpg";
+import mind from "../../assets/images/Courses/education/trust-certificate-course/img-4.jpg";
+import character from "../../assets/images/Courses/education/trust-certificate-course/img-5.jpg";
+import meditation from "../../assets/images/Courses/education/trust-certificate-course/img-6.jpg";
+import relationship from "../../assets/images/Courses/education/trust-certificate-course/img-7.jpg";
+import karma from "../../assets/images/Courses/education/trust-certificate-course/img-8.jpg";
+import soul from "../../assets/images/Courses/education/trust-certificate-course/img-9.jpg";
+import nobless from "../../assets/images/Courses/education/trust-certificate-course/img-10.jpg";
+import arts from "../../assets/images/Courses/education/trust-certificate-course/img-10.jpg";
+import services from "../../assets/images/Courses/education/trust-certificate-course/img-10.jpg";
+import mounam from "../../assets/images/Courses/education/trust-certificate-course/img-10.jpg";
 import flower_1 from "../../assets/images/flower-1.jpg";
 import flower_2 from "../../assets/images/flower-2.jpg";
 import flower_3 from "../../assets/images/flower-3.jpg";
 import flower_4 from "../../assets/images/flower-4.jpg";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Courses2 = () => {
   const contentRef = useRef(null);
 
   const [activeTab, setActiveTab] = useState("Body");
+
+  // useEffect(() => {
+  //   AOS.init(); // Initialize AOS when the component mounts
+  // }, []);
+  AOS.init();
 
   const handleTabClick = (tabName) => {
     // Calculate the offset for the selected section
@@ -52,11 +58,17 @@ const Courses2 = () => {
 
       <div className="container relative mt-100 mb-100 lg-mt-50 lg-mb-50">
         <div>
-         
           <div className="row mt-50 sticky-container">
             <div className="col-lg-3 course2-syllabus">
               <div className="sticky">
-                <h4 className="course-syllabus-title">Course Syllabus</h4>
+                <h4
+                  className="course-syllabus-title"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
+                  Course Syllabus
+                </h4>
                 <ul
                   style={{
                     listStyle: "none",
@@ -65,6 +77,9 @@ const Courses2 = () => {
                     width: "75%",
                     lineHeight: "20px",
                   }}
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
                 >
                   <li
                     onClick={() => handleTabClick("Body")}
@@ -132,82 +147,112 @@ const Courses2 = () => {
                   >
                     <a href="#meditation">Meditation</a>
                   </li>
-                 
+
                   <li
                     onClick={() => handleTabClick("Relationship")}
                     className={
-                        activeTab === "Relationship"
-                          ? "active-tab course2-list"
-                          : "course2-list"
-                      }
-                      style={{ marginBottom: "8px" }}
-                  ><a href="#relationship">Relationship</a>
+                      activeTab === "Relationship"
+                        ? "active-tab course2-list"
+                        : "course2-list"
+                    }
+                    style={{ marginBottom: "8px" }}
+                  >
+                    <a href="#relationship">Relationship</a>
                   </li>
                   <li
                     onClick={() => handleTabClick("Karma")}
                     className={
-                        activeTab === "Karma"
-                          ? "active-tab course2-list"
-                          : "course2-list"
-                      }
-                      style={{ marginBottom: "8px" }}
-                  ><a href="#karma">Karma</a>
+                      activeTab === "Karma"
+                        ? "active-tab course2-list"
+                        : "course2-list"
+                    }
+                    style={{ marginBottom: "8px" }}
+                  >
+                    <a href="#karma">Karma</a>
                   </li>
                   <li
                     onClick={() => handleTabClick("Soul")}
                     className={
-                        activeTab === "Soul"
-                          ? "active-tab course2-list"
-                          : "course2-list"
-                      }
-                      style={{ marginBottom: "8px" }}
-                  ><a href="#soul">Soul</a>
+                      activeTab === "Soul"
+                        ? "active-tab course2-list"
+                        : "course2-list"
+                    }
+                    style={{ marginBottom: "8px" }}
+                  >
+                    <a href="#soul">Soul</a>
                   </li>
                   <li
                     onClick={() => handleTabClick("Nobleness")}
                     className={
-                        activeTab === "Nobleness"
-                          ? "active-tab course2-list"
-                          : "course2-list"
-                      }
-                      style={{ marginBottom: "8px" }}
-                  ><a href="#nobleness">Nobleness</a>
+                      activeTab === "Nobleness"
+                        ? "active-tab course2-list"
+                        : "course2-list"
+                    }
+                    style={{ marginBottom: "8px" }}
+                  >
+                    <a href="#nobleness">Nobleness</a>
                   </li>
-                  <li  onClick={() => handleTabClick("Arts")}
+                  <li
+                    onClick={() => handleTabClick("Arts")}
                     className={
-                        activeTab === "Arts"
-                          ? "active-tab course2-list"
-                          : "course2-list"
-                      }
-                      style={{ marginBottom: "8px" }}><a href="#arts">Arts</a></li>
-                  <li onClick={() => handleTabClick("Services")}
+                      activeTab === "Arts"
+                        ? "active-tab course2-list"
+                        : "course2-list"
+                    }
+                    style={{ marginBottom: "8px" }}
+                  >
+                    <a href="#arts">Arts</a>
+                  </li>
+                  <li
+                    onClick={() => handleTabClick("Services")}
                     className={
-                        activeTab === "Services"
-                          ? "active-tab course2-list"
-                          : "course2-list"
-                      }
-                      style={{ marginBottom: "8px" }}><a href="#services">Services</a></li>
-                  <li onClick={() => handleTabClick("Mounam")}
+                      activeTab === "Services"
+                        ? "active-tab course2-list"
+                        : "course2-list"
+                    }
+                    style={{ marginBottom: "8px" }}
+                  >
+                    <a href="#services">Services</a>
+                  </li>
+                  <li
+                    onClick={() => handleTabClick("Mounam")}
                     className={
-                        activeTab === "Mounam"
-                          ? "active-tab course2-list"
-                          : "course2-list"
-                      }
-                      style={{ marginBottom: "8px" }}><a href="#mounam">Mounam(Silence)</a></li>
+                      activeTab === "Mounam"
+                        ? "active-tab course2-list"
+                        : "course2-list"
+                    }
+                    style={{ marginBottom: "8px" }}
+                  >
+                    <a href="#mounam">Mounam(Silence)</a>
+                  </li>
                 </ul>
               </div>
             </div>
 
             <div className="col-lg-7" ref={contentRef}>
               <div id="body" className="course2-outer">
-              <img
-                src={flower_1}
-                alt="illustration"
-                className="trut-flower-image-1"
-              
-              />
-                <h4 className="course2-title text-align">Body</h4>
-                <p className="course2-content text-align">
+                <img
+                  src={flower_1}
+                  alt="illustration"
+                  className="trut-flower-image-1"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                />
+                <h4
+                  className="course2-title text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
+                  Body
+                </h4>
+                <p
+                  className="course2-content text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
                   The body and its organs act as a medium for the soul to stay
                   and fulfill its need. It can only be fully utilized if we know
                   the body parts and its functioning. In this class, concepts
@@ -217,14 +262,30 @@ const Courses2 = () => {
                   from natural disasters and diseases and their remedies are
                   taught.
                 </p>
-                <div>
-                    <img src={body} alt="body" />
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
+                  <img src={body} alt="body" />
                 </div>
               </div>
 
               <div id="exercises-yoga" className="course2-outer">
-                <h4 className="course2-title text-align">Exercise/Yoga</h4>
-                <p className="course2-content text-align">
+                <h4
+                  className="course2-title text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
+                  Exercise/Yoga
+                </h4>
+                <p
+                  className="course2-content text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
                   The body keeps our soul healthy and exercise is what keeps our
                   body healthy. It gives movement to the parts of our body and
                   facilitates proper functioning and treats various ailments in
@@ -238,20 +299,37 @@ const Courses2 = () => {
                   mudras are taught.
                 </p>
                 <img
-                src={flower_2}
-                alt="illustration"
-                className="trut-flower-image-2"
-               
-              />
-                <div>
-                    <img src={yoga} alt="yoga" />
+                  src={flower_2}
+                  alt="illustration"
+                  className="trut-flower-image-2"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                />
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
+                  <img src={yoga} alt="yoga" />
                 </div>
-               
               </div>
 
               <div id="food" className="course2-outer">
-                <h4 className="course2-title text-align">Food</h4>
-                <p className="course2-content text-align">
+                <h4
+                  className="course2-title text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
+                  Food
+                </h4>
+                <p
+                  className="course2-content text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
                   Food is what helps our body to grow and protect itself. 90% of
                   the diseases that occur in our body are caused by unhealthy
                   food habits. Depending on the nature of the food, it also
@@ -264,14 +342,30 @@ const Courses2 = () => {
                   a healthy body and recipes for a proper healthy diet are
                   discussed and trained.
                 </p>
-                <div>
-                    <img src={food} alt="food" />
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
+                  <img src={food} alt="food" />
                 </div>
               </div>
 
               <div id="mind" className="course2-outer">
-                <h4 className="course2-title text-align">Mind</h4>
-                <p className="course2-content text-align">
+                <h4
+                  className="course2-title text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
+                  Mind
+                </h4>
+                <p
+                  className="course2-content text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
                   For humans, the mind is a mystery that is still beyond our
                   understanding. Gyanodhayam advises us not to run outside to
                   control one&#39;s minds, but instead to sit and bloom within
@@ -281,20 +375,38 @@ const Courses2 = () => {
                   explanations and solutions to mind related problems, ways of
                   controlling and addressing our minds.
                 </p>
-                <div>
-                    <img src={mind} alt="mind" />
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
+                  <img src={mind} alt="mind" />
                 </div>
               </div>
 
               <div id="characters" className="course2-outer">
-              <img
-                src={flower_4}
-                alt="illustration"
-                className="trust-flower-image-3"
-            
-              />
-                <h4 className="course2-title text-align">Character</h4>
-                <p className="course2-content text-align">
+                <img
+                  src={flower_4}
+                  alt="illustration"
+                  className="trust-flower-image-3"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                />
+                <h4
+                  className="course2-title text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
+                  Character
+                </h4>
+                <p
+                  className="course2-content text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
                   An individual is judged by his thoughts, words, and action. To
                   understand a person well, understanding his character becomes
                   vital, as characters are the base of virtue. Many with good
@@ -304,14 +416,30 @@ const Courses2 = () => {
                   levels of character, ways to develop good character, and to
                   succeed in life with moral excellence.
                 </p>
-                <div>
-                    <img src={character} alt="character" />
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
+                  <img src={character} alt="character" />
                 </div>
               </div>
 
               <div id="meditation" className="course2-outer">
-                <h4 className="course2-title text-align">Meditation</h4>
-                <p className="course2-content text-align">
+                <h4
+                  className="course2-title text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
+                  Meditation
+                </h4>
+                <p
+                  className="course2-content text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
                   Mediation is necessary to control the mind and to become a
                   mature person, to understand oneself, and to understand the
                   relation between God and himself. We emphasize our meditation
@@ -320,20 +448,38 @@ const Courses2 = () => {
                   disturbances that occur during meditation and how to overcome
                   them, to understand our own selves and godliness.
                 </p>
-                <div>
-                    <img src={meditation} alt="meditation" />
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
+                  <img src={meditation} alt="meditation" />
                 </div>
               </div>
-              
+
               <div id="relationship" className="course2-outer">
-              <img
-                src={flower_3}
-                alt="illustration"
-                className="trust-flower-image-4"
-              
-              />
-                <h4 className="course2-title text-align">Relationship</h4>
-                <p className="course2-content text-align">
+                <img
+                  src={flower_3}
+                  alt="illustration"
+                  className="trust-flower-image-4"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                />
+                <h4
+                  className="course2-title text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
+                  Relationship
+                </h4>
+                <p
+                  className="course2-content text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
                   Relationship occurs when two different individuals relate
                   themselves to each other with or without bloodborne. We build
                   a relationship with our family, relatives, friends, neighbors,
@@ -345,14 +491,30 @@ const Courses2 = () => {
                   spirituality while being in the family.
                 </p>
 
-                <div>
-                    <img src={relationship} alt="relationship" />
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
+                  <img src={relationship} alt="relationship" />
                 </div>
               </div>
 
               <div id="karma" className="course2-outer">
-                <h4 className="course2-title text-align">Karma</h4>
-                <p className="course2-content text-align">
+                <h4
+                  className="course2-title text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
+                  Karma
+                </h4>
+                <p
+                  className="course2-content text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
                   What we sow, so as we reap. As a result, we face both the pros
                   and cons. Elaboration on awareness in - how should thought and
                   action be? What will lead us to the right path? Things that do
@@ -363,20 +525,38 @@ const Courses2 = () => {
                   reaction; ways to overcome the consequences of Karma will be
                   taught in our classes.
                 </p>
-                <div>
-                    <img src={karma} alt="karma" />
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
+                  <img src={karma} alt="karma" />
                 </div>
               </div>
 
               <div id="soul" className="course2-outer">
-              <img
-                src={flower_1}
-                alt="illustration"
-                className="trust-flower-image-5"
-               
-              />
-                <h4 className="course2-title text-align">Soul</h4>
-                <p className="course2-content text-align">
+                <img
+                  src={flower_1}
+                  alt="illustration"
+                  className="trust-flower-image-5"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                />
+                <h4
+                  className="course2-title text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
+                  Soul
+                </h4>
+                <p
+                  className="course2-content text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
                   In spirituality, self-realization is equivalent to the
                   realization of God. Knowing ourselves is knowing our true
                   self, i.e. the soul. To obtain a simple and better
@@ -385,14 +565,30 @@ const Courses2 = () => {
                   soul and energy, soul after death. All these subjects will be
                   elaborately explained in our classes.
                 </p>
-                <div>
-                    <img src={soul} alt="soul" />
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
+                  <img src={soul} alt="soul" />
                 </div>
               </div>
 
               <div id="nobleness" className="course2-outer">
-                <h4 className="course2-title text-align">Nobleness (Unnadham)</h4>
-                <p className="course2-content text-align">
+                <h4
+                  className="course2-title text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
+                  Nobleness (Unnadham)
+                </h4>
+                <p
+                  className="course2-content text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
                   If one has no discipline, then even a lifetime of meditation
                   is a waste. So, discipline and high virtue form the foundation
                   for a meaningful life. To attain life’s highest state, it is
@@ -406,39 +602,82 @@ const Courses2 = () => {
                   the truth behind conducting rituals are also discussed in our
                   classes.
                 </p>
-                <div>
-                    <img src={nobless} alt="nobless" />
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
+                  <img src={nobless} alt="nobless" />
                 </div>
               </div>
 
               <div id="arts" className="course2-outer">
-                <h4 className="course2-title text-align">Arts</h4>
-                <p className="course2-content text-align">
-                 lorem ippusom
+                <h4
+                  className="course2-title text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
+                  Arts
+                </h4>
+                <p
+                  className="course2-content text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
+                  lorem ippusom
                 </p>
               </div>
 
               <div id="services" className="course2-outer">
-                <h4 className="course2-title text-align">Services</h4>
-                <p className="course2-content text-align">
-                 lorem ippusom
+                <h4
+                  className="course2-title text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
+                  Services
+                </h4>
+                <p
+                  className="course2-content text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
+                  lorem ippusom
                 </p>
               </div>
 
               <div id="mounam" className="course2-outer">
-                <h4 className="course2-title text-align">Mounam</h4>
-                <p className="course2-content text-align">
-                 lorem ippusom
+                <h4
+                  className="course2-title text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
+                  Mounam
+                </h4>
+                <p
+                  className="course2-content text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
+                  lorem ippusom
                 </p>
               </div>
 
-              <div>
-              <img
-                src={flower_2}
-                alt="illustration"
-                className="trust-flower-image-6"
-              
-              />
+              <div
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="1200"
+              >
+                <img
+                  src={flower_2}
+                  alt="illustration"
+                  className="trust-flower-image-6"
+                />
 
                 <h3 className="course2-rules-header text-align">
                   Rules and regulations for students:

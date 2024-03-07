@@ -14,11 +14,12 @@ import 'aos/dist/aos.css';
 
 const Hero = () => {
 
-  useEffect(() => {
-    AOS.init(); // Initialize AOS when the component mounts
-  }, []);
+  // useEffect(() => {
+  //   AOS.init(); // Initialize AOS when the component mounts
+  // }, []);
 
-
+  AOS.init();
+  
   return (
     <>
       <div className="container">

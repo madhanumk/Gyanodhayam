@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import jai_guruji1 from "../../assets/images/sec-1.jpg";
 import flower_1 from "../../assets/images/flower-1.jpg";
 import flower_2 from "../../assets/images/flower-2.jpg";
@@ -8,10 +8,17 @@ import founder from "../../assets/images/founder/Founder.jpg";
 import journey from "../../assets/images/founder/img-2.jpg";
 import book from "../../assets/images/founder/img-3.jpg";
 import article from "../../assets/images/founder/img-4.jpg";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const FounderContent = () => {
   const contentRef = useRef(null);
   const [activeTab, setActiveTab] = useState("Our Founder");
+
+  // useEffect(() => {
+  //   AOS.init(); // Initialize AOS when the component mounts
+  // }, []);
+  AOS.init();
 
   const handleTabClick = (tabName) => {
     // Calculate the offset for the selected section
@@ -23,7 +30,7 @@ const FounderContent = () => {
       <div>
         <div className="row intro-main">
           <div className="col-lg-6 intro-header">
-            <div className="intro-outer">
+            <div className="intro-outer" >
               <h3 className="intro-title">Founder</h3>
               <p className="intro-content">
                 Sri N. Jayakichenin (5 April 1977 – 28 November 2021), also
@@ -43,7 +50,7 @@ const FounderContent = () => {
           <div className="row mt-50 sticky-container">
             <div className="col-lg-3 course2-syllabus">
               <div className="sticky">
-                <ul className="founder-nav-list">
+                <ul className="founder-nav-list"  data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
                   <li
                     onClick={() => handleTabClick("Our Founder")}
                     className={
@@ -97,8 +104,8 @@ const FounderContent = () => {
             <div className="col-lg-6" ref={contentRef}>
               <div id="founder"></div>
               <div className="course2-outer">
-                <img src={flower_1} alt="flower" className="founder-image-1" />
-                <div className="text-align">
+                <img src={flower_1} alt="flower" className="founder-image-1" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200"/>
+                <div className="text-align"  data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
                   <h4 className="course2-title">Our Founder</h4>
                   <p className="course2-content">
                     Sri N. Jayakichenin (5 April 1977 – 28 November 2021), also
@@ -114,6 +121,7 @@ const FounderContent = () => {
                     display: "flex",
                     justifyContent: "center",
                   }}
+                  data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200"
                 >
                   <img src={founder} alt="nanneri" />
                 </div>
@@ -124,12 +132,12 @@ const FounderContent = () => {
 
               <div id="journey"></div>
               <div className="course2-outer">
-                <img src={flower_2} alt="flower" className="founder-image-2" />
-                <div className="text-align">
-                  <h4 className="course2-title">His Life Journey</h4>
+                <img src={flower_2} alt="flower" className="founder-image-2" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200"/>
+                <div className="text-align"  >
+                  <h4 className="course2-title" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">His Life Journey</h4>
                   <p
                     className="course2-content"
-                    style={{ paddingBottom: "8px" }}
+                    style={{ paddingBottom: "8px" }} data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200"
                   >
                     Jai Guruji completed his schooling at Jeevanandham Govt
                     Higher Secondary School and obtained a diploma from
@@ -139,7 +147,7 @@ const FounderContent = () => {
                     their birth becomes their own incarnation, and the birth of
                     Jai Guruji is no exception to this.
                   </p>
-                  <p className="course2-content">
+                  <p className="course2-content" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
                     Though he led an ordinary life, his intention was always to
                     reach the highest, his mind continued to ponder about the
                     puzzles of the world and the mysterious knots of creation.
@@ -150,14 +158,14 @@ const FounderContent = () => {
                     Pondicherry.
                   </p>
 
-                  <p className="course2-content">
+                  <p className="course2-content" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
                     Despite the people who try to set their own identity on this
                     earth, he preferred to ride on the road not much taken. He
                     chose the noble path of dedicating his life to the benefit
                     of society. He figured out serving humanity is the right
                     platform to give whatever he got.
                   </p>
-                  <p className="course2-content">
+                  <p className="course2-content" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
                     It is easy to claim that a person could not hurt himself or
                     others if he was all alone in a deep forest, mountain, or
                     lonely spot. But managing his emotional characters becomes
@@ -169,7 +177,7 @@ const FounderContent = () => {
                     everyday life. In order to lead others by being in ordinary
                     social life, he did go to work like everybody else.
                   </p>
-                  <p className="course2-content">
+                  <p className="course2-content" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
                     He was a technician at the Indian Institute of Technology in
                     Adayar, Chennai. He has worked as a manager, technical
                     director, and professional consultant for many private media
@@ -179,9 +187,9 @@ const FounderContent = () => {
                   <img
                     src={flower_4}
                     alt="illustration"
-                    className="founder-image-3"
+                    className="founder-image-3" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200"  
                   />
-                  <p className="course2-content">
+                  <p className="course2-content" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
                     From the beginning till the end, our Guruji has devoted his
                     entire life to serving mankind. Indeed, the disparate
                     community serves the true beginning of the quest for God.
@@ -195,7 +203,7 @@ const FounderContent = () => {
                   </p>
                 </div>
 
-                <div style={{ margin: "20px 0px" }}>
+                <div style={{ margin: "20px 0px" }}  data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
                   <img src={journey} alt="illustration" />
                 </div>
 
@@ -209,9 +217,9 @@ const FounderContent = () => {
                 <img
                   src={flower_3}
                   alt="illustration"
-                  className="founder-image-4"
+                  className="founder-image-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200"
                 />
-                <div className="text-align">
+                <div className="text-align"  data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
                   <h4 className="course2-title">Books & Speech</h4>
                   <p className="course2-content">
                     Sri N. Jayakichenin (5 April 1977 – 28 November 2021), also
@@ -220,7 +228,7 @@ const FounderContent = () => {
                     took place on an auspicious full moon day, in Mahara Laknam.
                   </p>
                 </div>
-                <div style={{ margin: "20px 0px" }}>
+                <div style={{ margin: "20px 0px" }}  data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
                   <img src={book} alt="illustration" />
                 </div>
 
@@ -230,13 +238,13 @@ const FounderContent = () => {
               </div>
 
               <div id="article"></div>
-              <div className="course2-outer">
+              <div>
                 <img
                   src={flower_1}
                   alt="illustration"
-                  className="founder-image-5"
+                  className="founder-image-5" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200"
                 />{" "}
-                <div className="text-align">
+                <div className="text-align"  data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
                   <h4 className="course2-title">Article</h4>
                   <p className="course2-content">
                     Sri N. Jayakichenin (5 April 1977 – 28 November 2021), also
@@ -245,7 +253,7 @@ const FounderContent = () => {
                     took place on an auspicious full moon day, in Mahara Laknam.
                   </p>
                 </div>
-                <div style={{ margin: "20px 0px" }}>
+                <div style={{ margin: "20px 0px" }}  data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
                   <img src={article} alt="illustration" />
                 </div>
                 {/* <p className="guru-read-2">

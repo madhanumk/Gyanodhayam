@@ -1,17 +1,16 @@
-import React from "react";
-import Seo from "../common/seo/Seo";
-import Sidebar from "../common/header/sidebar/Sidebar";
-import Header from "../business/Header";
+import React, { useEffect } from "react";
 import jai_guruji1 from "../../assets/images/sec-1.jpg";
-import qoutes_up from "../../assets/images/quotes-up.svg";
-import qoutes_down from "../../assets/images/quotes-down.svg";
-import homeBanner from "../../assets/images/Banner.jpg";
-import bannerLogo from "../../assets/images/BannerLogo.png";
 import nanneri from "../../assets/images/Courses/education/img-nanneri/img-1.jpg";
 import flower_1 from "../../assets/images/flower-1.jpg";
 import flower_2 from "../../assets/images/flower-2.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-const Courses1 = () => {
+const Nanneri = () => {
+  // useEffect(() => {
+  //   AOS.init(); // Initialize AOS when the component mounts
+  // }, []);
+  AOS.init();
   return (
     <>
       <div>
@@ -39,11 +38,21 @@ const Courses1 = () => {
           src={flower_1}
           alt="illustration"
           className="nanneri-flower-image-1"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1200"
         />
         <div className="row pb-40 lg-pb-10">
           <div className="col-lg-2 empty-div"></div>
           <div className="col-lg-8">
-            <h3 className="nanneri-header">Nanneri</h3>
+            <h3
+              className="nanneri-header"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="1200"
+            >
+              Nanneri
+            </h3>
           </div>
           <div className="col-lg-2 empty-div"></div>
         </div>
@@ -52,14 +61,24 @@ const Courses1 = () => {
 
           <div className="col-lg-8">
             <div className="nanneri-contents" style={{ paddingBottom: "40px" }}>
-              <div className="nanneri-image-outer">
+              <div
+                className="nanneri-image-outer"
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="1200"
+              >
                 <img
                   src={nanneri}
                   alt="nanneri"
                   className="nanneri-nanneri-image"
                 />
               </div>
-              <div className="text-align">
+              <div
+                className="text-align"
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="1200"
+              >
                 <h4 className="nanneri-header-1">Course Syllabus</h4>
                 <ul className="nanneri-list">
                   <li>Simple exercises</li>
@@ -76,10 +95,25 @@ const Courses1 = () => {
                 src={flower_2}
                 alt="illustration"
                 className="nanneri-flower-image-2"
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="1200"
               />
-              <h4 className="nanneri-header-1">Rules for students:</h4>
+              <h4
+                className="nanneri-header-1"
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="1200"
+              >
+                Rules for students:
+              </h4>
 
-              <ul className="nanneri-rules-list">
+              <ul
+                className="nanneri-rules-list"
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="1200"
+              >
                 <li>People of all ages can participate.</li>
                 <li>Classes take place on Saturdays or Sundays.</li>
                 <li>
@@ -100,13 +134,4 @@ const Courses1 = () => {
   );
 };
 
-export default Courses1;
-
-<div style={{ display: "flex", flexDirection: "column" }}>
-  <div>
-    <h1>hi</h1>
-  </div>
-  <div style={{ order: -1, "@media (min-width: 768px)": { order: 0 } }}>
-    <div>Raj</div>
-  </div>
-</div>;
+export default Nanneri;

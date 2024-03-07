@@ -414,8 +414,8 @@
 	}
 
 	.navbar .mega-dropdown-sm .dropdown-menu {
-		min-width: 200px;
-		left: -40px;
+		min-width: 270px;
+		left: -75px;
 	}
 
 	.navbar .dropdown-menu.home-sub-menu {
@@ -1369,7 +1369,7 @@ li {
 	display: flex;
 }
 .nanneri-nanneri-image{
-	width: 100%;
+	width: 100% !important;
 }
 .nanneri-image-outer{
 	padding: 5px 50px 0px 0px;
@@ -1388,6 +1388,8 @@ li {
 	right: -220px;
 	bottom: 30px;
 }
+
+
 
 
 // trust course
@@ -1503,6 +1505,9 @@ li {
 	bottom: 0px;
 }
 
+.w-60-100{
+	width: 60%;
+}
 
 // home 
 
@@ -1897,4 +1902,11 @@ right: 100px;
     opacity: 0.5;
 }
 
+.nanneri-header{
+font-size: 30px;
+}
+
+.w-60-100{
+	width: 100%;
+}
 }

@@ -16,8 +16,16 @@ import flower_1 from "../../assets/images/flower-1.jpg";
 import flower_2 from "../../assets/images/flower-2.jpg";
 import flower_3 from "../../assets/images/flower-3.jpg";
 import flower_4 from "../../assets/images/flower-4.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Courses3 = () => {
+  // useEffect(() => {
+  //   AOS.init(); // Initialize AOS when the component mounts
+  // }, []);
+
+  AOS.init();
+
   return (
     <>
       <div>
@@ -46,22 +54,39 @@ const Courses3 = () => {
           <img
             src={flower_1}
             alt="illustration"
-        
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="1200"
             className="sem1-flower-image-1"
           />
-          <p className="first-sem-top text-align">
+          <p
+            className="first-sem-top text-align"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="1200"
+          >
             The Gyanodhayam Educational Trust syllabus is systematically divided
             into 10 subjects with their set of practical’s and is combined into
             a graduation course. The students who clear this exam are qualified
             to become a Gyanodhayam Educational Trust teacher.
           </p>
 
-          <h3 className="first-sem-header text-align">
+          <h3
+            className="first-sem-header text-align"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="1200"
+          >
             First Semester (12 Weeks)
           </h3>
           <div>
             <div className="row">
-              <div className="col-lg-9 order-lg-2">
+              <div
+                className="col-lg-9 order-lg-2"
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="1200"
+              >
                 <h4 className="first-side-header text-align">
                   Udal Gyanam (Body)
                 </h4>
@@ -89,14 +114,24 @@ const Courses3 = () => {
                   </ol>
                 </div>
               </div>
-              <div className="col-lg-3 order-lg-1 sem1-images">
+              <div
+                className="col-lg-3 order-lg-1 sem1-images"
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="1200"
+              >
                 <img src={udal} alt="udal" className="width-100" />
               </div>
             </div>
 
             <div style={{ paddingBottom: "20px" }}>
               <div className="row">
-                <div className="col-lg-9 order-lg-2 text-align">
+                <div
+                  className="col-lg-9 order-lg-2 text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
                   <h5 className="first-side-subHeader">Udal Pathugapu</h5>
                   <ol className="first-sem-list">
                     <li>
@@ -130,15 +165,29 @@ const Courses3 = () => {
                     </li>
                   </ol>
                 </div>
-                <div className="col-lg-3 sem1-images order-lg-1">
-                  <img src={udal_pathugapu} alt="udal-pathugappu" className="width-100" />
+                <div
+                  className="col-lg-3 sem1-images order-lg-1"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
+                  <img
+                    src={udal_pathugapu}
+                    alt="udal-pathugappu"
+                    className="width-100"
+                  />
                 </div>
               </div>
             </div>
 
             <div style={{ paddingBottom: "30px" }}>
               <div className="row">
-                <div className="col-lg-9 order-lg-2  text-align">
+                <div
+                  className="col-lg-9 order-lg-2  text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
                   <h4 className="first-side-header">Unavu Gyanam (Food)</h4>
                   <p className="first-sem-exam">
                     <span style={{ fontWeight: "bold" }}>Written Exam :</span>{" "}
@@ -150,7 +199,6 @@ const Courses3 = () => {
                     <img
                       src={flower_2}
                       alt="illustration"
-                     
                       className="sem1-flower-image-2"
                     />
                     <ol className="first-sem-list">
@@ -176,13 +224,23 @@ const Courses3 = () => {
                     </ol>
                   </div>
                 </div>
-                <div className="col-lg-3 sem1-images order-lg-1">
+                <div
+                  className="col-lg-3 sem1-images order-lg-1"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
                   <img src={unavu} alt="unavu" className="width-100" />
                 </div>
               </div>
               <div style={{ paddingBottom: "20px" }}>
                 <div className="row">
-                  <div className="col-lg-9 order-lg-2  text-align">
+                  <div
+                    className="col-lg-9 order-lg-2  text-align"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    data-aos-duration="1200"
+                  >
                     <h5 className="first-side-subHeader">Nalan Murai Sei</h5>
                     <p className="first-sem-content">
                       Man differs from an animal in having the sixth
@@ -193,14 +251,24 @@ const Courses3 = () => {
                       description.
                     </p>
                   </div>
-                  <div className="col-lg-3 sem1-images order-lg-1">
+                  <div
+                    className="col-lg-3 sem1-images order-lg-1"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    data-aos-duration="1200"
+                  >
                     <img src={nalan} alt="nalan" className="width-100" />
                   </div>
                 </div>
               </div>
               <div style={{ paddingBottom: "20px" }}>
                 <div className="row">
-                  <div className="col-lg-9 order-lg-2  text-align">
+                  <div
+                    className="col-lg-9 order-lg-2  text-align"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    data-aos-duration="1200"
+                  >
                     <h5 className="first-side-subHeader">Practical Exam</h5>
                     <p className="first-sem-content">
                       Cooking is about minimizing grievances and replenishing
@@ -213,7 +281,12 @@ const Courses3 = () => {
                       to them during the exam.
                     </p>
                   </div>
-                  <div className="col-lg-3 sem1-images order-lg-1">
+                  <div
+                    className="col-lg-3 sem1-images order-lg-1"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    data-aos-duration="1200"
+                  >
                     <img src={exam} alt="exam" className="width-100" />
                   </div>
                 </div>
@@ -223,7 +296,12 @@ const Courses3 = () => {
             <div style={{ paddingBottom: "30px" }}>
               <div style={{ paddingBottom: "20px" }}>
                 <div className="row">
-                  <div className="col-lg-9 order-lg-2  text-align">
+                  <div
+                    className="col-lg-9 order-lg-2  text-align"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    data-aos-duration="1200"
+                  >
                     <h4 className="first-side-header">
                       Pothu Gyanam (General Knowledge)
                     </h4>
@@ -236,14 +314,25 @@ const Courses3 = () => {
                       knowledge and interpretation of natural life.
                     </p>
                   </div>
-                </div>
-                <div className="col-lg-3 sem1-images order-lg-1">
-                  <img src={kelvi} alt="kelvi" className="width-100" />
+
+                  <div
+                    className="col-lg-3 sem1-images order-lg-1"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    data-aos-duration="1200"
+                  >
+                    <img src={kelvi} alt="kelvi" className="width-100" />
+                  </div>
                 </div>
               </div>
               <div style={{ paddingBottom: "20px" }}>
                 <div className="row">
-                  <div className="col-lg-9  order-lg-2  text-align">
+                  <div
+                    className="col-lg-9  order-lg-2  text-align"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    data-aos-duration="1200"
+                  >
                     <h5 className="first-side-subHeader">Unmei Virumbhi</h5>
                     <p className="first-sem-content">
                       Reading and discussing spiritual places, biographies of
@@ -253,22 +342,41 @@ const Courses3 = () => {
                       fingerprinting, medicine, etc.).
                     </p>
                   </div>
-                  <div className="col-lg-3 sem1-images order-lg-1">
+                  <div
+                    className="col-lg-3 sem1-images order-lg-1"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    data-aos-duration="1200"
+                  >
                     <img src={unmai} alt="unmai" className="width-100" />
                   </div>
                 </div>
               </div>
               <div style={{ paddingBottom: "20px" }}>
                 <div className="row">
-                  <div className="col-lg-9 order-lg-2  text-align">
+                  <div
+                    className="col-lg-9 order-lg-2  text-align"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    data-aos-duration="1200"
+                  >
                     <h5 className="first-side-subHeader">Nalam Vazha</h5>
                     <p className="first-sem-content">
                       This is a collection of simple information for us to know
                       and follow, to lead a healthy and happy life.
                     </p>
                   </div>
-                  <div className="col-lg-3 sem1-images order-lg-1">
-                    <img src={nalam_vazha} alt="nalam_vazha" className="width-100" />
+                  <div
+                    className="col-lg-3 sem1-images order-lg-1"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    data-aos-duration="1200"
+                  >
+                    <img
+                      src={nalam_vazha}
+                      alt="nalam_vazha"
+                      className="width-100"
+                    />
                   </div>
                 </div>
               </div>
@@ -277,7 +385,12 @@ const Courses3 = () => {
             <div style={{ paddingBottom: "30px" }}>
               <div>
                 <div className="row">
-                  <div className="col-lg-9 order-lg-2  text-align">
+                  <div
+                    className="col-lg-9 order-lg-2  text-align"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    data-aos-duration="1200"
+                  >
                     <h4 className="first-side-header">Aasana Gyanam (Yoga)</h4>
                     <p className="first-sem-content">
                       <span style={{ fontWeight: "bold" }}>Written Exam:</span>{" "}
@@ -294,8 +407,17 @@ const Courses3 = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="col-lg-3 sem1-images order-lg-1">
-                    <img src={udal_payirchi} alt="udal_payirchi" className="width-100" />
+                  <div
+                    className="col-lg-3 sem1-images order-lg-1"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    data-aos-duration="1200"
+                  >
+                    <img
+                      src={udal_payirchi}
+                      alt="udal_payirchi"
+                      className="width-100"
+                    />
                   </div>
                 </div>
               </div>
@@ -303,12 +425,18 @@ const Courses3 = () => {
                 <img
                   src={flower_3}
                   alt="illustration"
-                
                   className="sem1-flower-image-3"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
                 />
                 <div className="row">
-                 
-                  <div className="col-lg-9 order-lg-2  text-align">
+                  <div
+                    className="col-lg-9 order-lg-2  text-align"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    data-aos-duration="1200"
+                  >
                     <h5 className="first-side-subHeader">Muthiraigal</h5>
                     <p className="first-sem-content">
                       Mudras are used to increase our strengths, to fulfill
@@ -334,8 +462,17 @@ const Courses3 = () => {
                       <li>Benefits of Mudras.</li>
                     </ol>
                   </div>
-                  <div className="col-lg-3 sem1-images order-lg-1">
-                    <img src={muthiraigal} alt="muthiraigal" className="width-100" />
+                  <div
+                    className="col-lg-3 sem1-images order-lg-1"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    data-aos-duration="1200"
+                  >
+                    <img
+                      src={muthiraigal}
+                      alt="muthiraigal"
+                      className="width-100"
+                    />
                   </div>
                 </div>
               </div>
@@ -343,8 +480,12 @@ const Courses3 = () => {
 
             <div style={{ paddingBottom: "30px" }}>
               <div className="row">
-               
-                <div className="col-lg-9 order-lg-2  text-align">
+                <div
+                  className="col-lg-9 order-lg-2  text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
                   <h4 className="first-side-header">
                     Aasana Gyanam (Practical Exam)
                   </h4>
@@ -356,21 +497,33 @@ const Courses3 = () => {
                     and their spiritual benefit respectively and submit them.
                   </p>
                 </div>
-                 <div className="col-lg-3 sem1-images order-lg-1">
+                <div
+                  className="col-lg-3 sem1-images order-lg-1"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
                   <img src={aasana} alt="aasana" className="width-100" />
                 </div>
               </div>
             </div>
           </div>
-          <div style={{ paddingBottom: "30px" }}>
+          <div>
             <img
               src={flower_4}
               alt="illustration"
-           
               className="sem1-flower-image-4"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="1200"
             />
             <div className="row">
-              <div className="col-lg-8  text-align">
+              <div
+                className="col-lg-8  text-align"
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="1200"
+              >
                 <h4 className="first-side-header">
                   Rules and Regulations for Students:
                 </h4>
@@ -401,7 +554,12 @@ const Courses3 = () => {
                   </li>
                 </ol>
               </div>
-              <div className="col-lg-4"></div>
+              <div
+                className="col-lg-4"
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="1200"
+              ></div>
             </div>
           </div>
         </div>

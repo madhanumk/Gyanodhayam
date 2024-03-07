@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import nanneri from "../../assets/images/Courses/Imgs/img-1.jpg";
 import trust from "../../assets/images/Courses/Imgs/img-2.jpg";
 import motivation from "../../assets/images/Courses/Imgs/img-3.jpg";
@@ -11,10 +11,18 @@ import flower_4 from "../../assets/images/flower-4.jpg";
 import homeBanner from "../../assets/images/Banner.jpg";
 import bannerLogo from "../../assets/images/BannerLogo.png";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const CourseContent = () => {
   const contentRef = useRef(null);
   const [activeTab, setActiveTab] = useState("Nanneri");
+
+  // useEffect(() => {
+  //   AOS.init(); // Initialize AOS when the component mounts
+  // }, []);
+
+  AOS.init();
 
   const handleTabClick = (tabName) => {
     // Calculate the offset for the selected section
@@ -50,12 +58,15 @@ const CourseContent = () => {
         </div>
       </div>
 
-      <div className="container mt-100 mb-100 lg-mt-50 lg-mb-50">
+      <div className="container mt-100 mb-50 lg-mt-50 lg-mb-20">
         <div className="relative">
           <div className="row mt-50 sticky-container">
             <div className="col-lg-3 course2-syllabus">
               <div className="sticky">
                 <ul
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
                   style={{
                     listStyle: "none",
                     padding: "0px",
@@ -148,24 +159,47 @@ const CourseContent = () => {
                   src={flower_1}
                   alt="illustration"
                   className="courses-image-1"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
                 />
-                <div className="text-align">
+                <div
+                  className="text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
                   <h4 className="course2-title">Nanneri</h4>
                   <p className="course2-content">
                     Basic practices for healthy lifestyle.
                   </p>
                 </div>
-                <div style={{ margin: "20px 0px" }}>
+                <div
+                  style={{ margin: "20px 0px" }}
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
                   <img src={nanneri} alt="nanneri" />
                 </div>
-                <p className="guru-read text-align">
+                <p
+                  className="guru-read text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
                   <Link to="/nanneri">Learn More</Link>
                 </p>
               </div>
 
               <div id="educational-trust"></div>
               <div className="course2-outer">
-                <div className="text-align">
+                <div
+                  className="text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
                   <h4 className="course2-title">
                     Gyanodhayam Educational Trust Certificate Course
                   </h4>
@@ -175,22 +209,40 @@ const CourseContent = () => {
                     websites with our talented expert.
                   </p>
                 </div>
-                <div style={{ margin: "20px 0px" }}>
+                <div
+                  style={{ margin: "20px 0px" }}
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
                   <img src={trust} alt="illustration" />
                 </div>
                 <img
                   src={flower_2}
                   alt="illustration"
                   className="courses-image-2"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
                 />
-                <p className="guru-read-2 text-align">
+                <p
+                  className="guru-read-2 text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
                   <Link to="/trust-course">Learn More</Link>
                 </p>
               </div>
 
               <div id="motivation"></div>
               <div className="course2-outer">
-                <div className="text-align">
+                <div
+                  className="text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
                   <h4 className="course2-title">
                     Gyanodhayam Educational Trust Motivation Class (Degree)
                   </h4>
@@ -200,10 +252,20 @@ const CourseContent = () => {
                     is combined into a graduation course.
                   </p>
                 </div>
-                <div style={{ margin: "20px 0px" }}>
+                <div
+                  style={{ margin: "20px 0px" }}
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
                   <img src={motivation} alt="illustration" />
                 </div>
-                <div className="course-links text-align">
+                <div
+                  className="course-links text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
                   <p className="guru-read-3" style={{ paddingRight: "20px" }}>
                     <Link to="/first-sem">First Semester</Link>
                   </p>
@@ -214,14 +276,32 @@ const CourseContent = () => {
               </div>
               <div id="teachers"></div>
               <div className="course2-outer">
-                <div className="text-align">
+                <div
+                  className="text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
                   <h4 className="course2-title">Teachers Practice Course</h4>
-                  <p className="course2-content">lorem content</p>
+                  <p className="course2-content">
+                    There are certain rules to be followed to continue as a
+                    Gyanodhayam Educational Trust teacher.
+                  </p>
                 </div>
-                <div style={{ margin: "20px 0px" }}>
+                <div
+                  style={{ margin: "20px 0px" }}
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
                   <img src={teachers} alt="illustration" />
                 </div>
-                <p className="guru-read-3 text-align">
+                <p
+                  className="guru-read-3 text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
                   <Link to="/ui-header-v5">Learn More</Link>
                 </p>
               </div>
@@ -229,19 +309,47 @@ const CourseContent = () => {
               <div id="guru"></div>
               <div className="course2-outer">
                 <div className="text-align">
-                  <h4 className="course2-title">Guru Practice Course</h4>
+                  <h4
+                    className="course2-title"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    data-aos-duration="1200"
+                  >
+                    Guru Practice Course
+                  </h4>
                   <img
                     src={flower_4}
                     alt="illustration"
                     className="courses-image-3"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    data-aos-duration="1200"
                   />
 
-                  <p className="course2-content">Lorem content</p>
+                  <p
+                    className="course2-content"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    data-aos-duration="1200"
+                  >
+                    The aim of Gyanodhayam Educational Trust is to serve society
+                    by assisting spiritualy interested souls to become Gurus.
+                  </p>
                 </div>
-                <div style={{ margin: "20px 0px" }}>
+                <div
+                  style={{ margin: "20px 0px" }}
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
                   <img src={guru} alt="illustration" />
                 </div>
-                <p className="guru-read-3 text-align">
+                <p
+                  className="guru-read-3 text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
                   <Link to="/ui-header-v5">Learn More</Link>
                 </p>
               </div>

@@ -25,9 +25,12 @@ const CounterUp = () => {
   //   return new Date(dateString).toLocaleDateString(undefined, options);
   // };
 
-  useEffect(() => {
-    AOS.init(); // Initialize AOS when the component mounts
-  }, []);
+  // useEffect(() => {
+  //   AOS.init(); // Initialize AOS when the component mounts
+  // }, []);
+
+  AOS.init();
+  
   return (
     <>
       <div className="container">

@@ -1,28 +1,26 @@
 import React, { useRef, useState } from "react";
-import jai_guruji1 from "../../assets/images/sec-1.jpg";
-import jai_guruji2 from "../../assets/images/sec-2.jpg";
-import jai_guruji3 from "../../assets/images/sec-3.jpg";
-import jai_guruji4 from "../../assets/images/sec-4.jpg";
 import flower_1 from "../../assets/images/flower-1.jpg";
 import flower_2 from "../../assets/images/flower-2.jpg";
 import flower_3 from "../../assets/images/flower-3.jpg";
 import flower_4 from "../../assets/images/flower-4.jpg";
-import events from "../../assets/images/events.jpg";
-import { Link } from "react-router-dom";
-import nanneri from "../../assets/images/Courses/Imgs/img-1.jpg";
-import trust from "../../assets/images/Courses/Imgs/img-2.jpg";
-
 import music from "../../assets/images/media_press/music.jpg";
 import audio from "../../assets/images/media_press/audio.jpg";
 import video from "../../assets/images/media_press/video.jpg";
 import banner from "../../assets/images/media_press/banner.jpg";
 import calendar from "../../assets/images/media_press/calendar.jpg";
 import social_media from "../../assets/images/media_press/social-media.jpg";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const FounderContent = () => {
   const contentRef = useRef(null);
   const [activeTab, setActiveTab] = useState("Music");
+
+  // useEffect(() => {
+  //     AOS.init(); // Initialize AOS when the component mounts
+  // })
+
+  AOS.init();
 
   const handleTabClick = (tabName) => {
     // Calculate the offset for the selected section
@@ -59,7 +57,9 @@ const FounderContent = () => {
                     padding: "0px",
                     fontSize: "14px",
                     lineHeight: "20px",
-                  }}
+                  }} data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
                 >
                   <li
                     onClick={() => handleTabClick("Music")}
@@ -141,16 +141,24 @@ const FounderContent = () => {
                 <img
                   src={flower_1}
                   alt="flower"
-                  className="media-flower-image-1"
+                  className="media-flower-image-1" data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
                 />
 
-                <h4 className="course2-title text-align">Music</h4>
-                <p className="course2-content text-align">
+                <h4 className="course2-title text-align" data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1200">Music</h4>
+                <p className="course2-content text-align" data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1200">
                   lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text
                 </p>
-                <div>
+                <div data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1200">
                   <img src={music} alt="music" />
                 </div>
                 {/* <p className="guru-read">
@@ -163,17 +171,27 @@ const FounderContent = () => {
                 <img
                   src={flower_2}
                   alt="flower"
-                  className="media-flower-image-2"
+                  className="media-flower-image-2" data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
                 />
-                <h4 className="course2-title text-align ">Audio</h4>
-                <p className="course2-content text-align" style={{ paddingBottom: "8px" }}>
+                <h4 className="course2-title text-align " data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1200">Audio</h4>
+                <p
+                  className="course2-content text-align"
+                  style={{ paddingBottom: "8px" }} data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
                   lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text
                 </p>
 
-             
-                <div style={{ margin: "20px 0px" }}>
+                <div style={{ margin: "20px 0px" }} data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1200">
                   <img src={audio} alt="audio" />
                 </div>
 
@@ -184,20 +202,27 @@ const FounderContent = () => {
 
               <div id="video"></div>
               <div className="course2-outer">
-              <img
+                <img
                   src={flower_4}
                   alt="illustration"
-                  className="media-flower-image-3"
+                  className="media-flower-image-3" data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
                 />
 
-              
-                <h4 className="course2-title text-align" >Video</h4>
-                <p className="course2-content text-align">
+                <h4 className="course2-title text-align" data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1200">Video</h4>
+                <p className="course2-content text-align" data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1200">
                   lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text
                 </p>
-                <div style={{ margin: "20px 0px" }}>
+                <div style={{ margin: "20px 0px" }} data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1200">
                   <img src={video} alt="video" />
                 </div>
 
@@ -208,19 +233,27 @@ const FounderContent = () => {
 
               <div id="calendar"></div>
               <div className="course2-outer">
-              <img
+                <img
                   src={flower_3}
                   alt="illustration"
-                  className="media-flower-image-4"
+                  className="media-flower-image-4" data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
                 />
-               
-                <h4 className="course2-title text-align">Calendar</h4>
-                <p className="course2-content text-align">
+
+                <h4 className="course2-title text-align" data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1200">Calendar</h4>
+                <p className="course2-content text-align" data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1200">
                   lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text
                 </p>
-                <div style={{ margin: "20px 0px" }}>
+                <div style={{ margin: "20px 0px" }} data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1200">
                   <img src={calendar} alt="calendar" />
                 </div>
 
@@ -231,20 +264,27 @@ const FounderContent = () => {
 
               <div id="social_media"></div>
               <div className="course2-outer">
-              <img
+                <img
                   src={flower_1}
                   alt="illustration"
-                  className="media-flower-image-5"
-                  
+                  className="media-flower-image-5" data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
                 />
-               
-                <h4 className="course2-title text-align">Social Media</h4>
-                <p className="course2-content text-align">
+
+                <h4 className="course2-title text-align" data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1200">Social Media</h4>
+                <p className="course2-content text-align" data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1200">
                   lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text
                 </p>
-                <div style={{ margin: "20px 0px" }}>
+                <div style={{ margin: "20px 0px" }} data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1200">
                   <img src={social_media} alt="calendar" />
                 </div>
 
@@ -255,15 +295,20 @@ const FounderContent = () => {
 
               <div id="contact_us"></div>
               <div className="course2-outer">
-              <img
+                <img
                   src={flower_2}
                   alt="illustration"
-                 
-                  className="media-flower-image-6"                                                  
+                  className="media-flower-image-6" data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
                 />
-                <h4 className="course2-title text-align">Contact Us</h4>
+                <h4 className="course2-title text-align" data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1200">Contact Us</h4>
 
-                <p className="course2-content text-align">Registration Form</p>
+                <p className="course2-content text-align" data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1200">Registration Form</p>
               </div>
             </div>
 

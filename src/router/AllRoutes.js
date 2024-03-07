@@ -68,6 +68,7 @@ import SingleGallery from '../pages/gallery/SingleGallery'
 import LifeGyanodhayam from "../pages/life/LifeGyanodhayam";
 import Teachers from "../pages/courses/Teachers";
 import Guru from "../pages/courses/Guru";
+import SpecialDays from "../pages/specialDays/SpecialDays";
 
 const AllRoutes = () => {
   return (
@@ -86,6 +87,7 @@ const AllRoutes = () => {
         <Route path="/second-sem" element={<SecondSem />} />
         <Route path="/teachers-practice-course" element={< Teachers/>} />
         <Route path="/guru-practice-course" element={<Guru/>} />
+        <Route path="/special-days" element={<SpecialDays />} />
 
         <Route path="/portfolio-v1" element={<PortfolioV1 />} />
         <Route path="/portfolio-v2" element={<PortfolioV2 />} />

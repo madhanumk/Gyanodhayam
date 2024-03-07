@@ -322,7 +322,7 @@ const SpecialDaysContent = () => {
                   data-aos-delay="300"
                   data-aos-duration="1200"
                 >
-                  <h5 className="first-side-subHeader">Meditation day:</h5>
+                  <h5 className="first-side-subHeader">Meditation day</h5>
                   <p className="first-sem-content">
                     Every year in the month of July on 23rd, a day especially
                     for meditation will be observed. Brahma Thavam will be

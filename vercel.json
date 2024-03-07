@@ -4,6 +4,9 @@
         "src": "package.json",
         "use": "@vercel/node"
       }
-    ]
+    ],
+    "development": {
+      "outputDirectory": "public"
+    }
   }
   

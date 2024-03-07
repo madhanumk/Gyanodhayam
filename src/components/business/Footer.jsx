@@ -1,17 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import footerLogo from "../../assets/images/footer-logo.jpg"
 import facebook from "../../assets/images/facebook.svg"
 import instagram from "../../assets/images/instagram.svg"
 import youtube from "../../assets/images/youtube.svg"
 import twiter from "../../assets/images/twiter.png"
 import { Link } from 'react-router-dom'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Footer = () => {
+
+  useEffect(() => {
+    AOS.init(); // Initialize AOS when the component mounts
+  }, []);
+
+
   return (
-    <div className="container mt-30 ">
+    <div className="container mt-30 " >
 
       <div className="row footer-row" >
-        <div className="col-lg-4 col-md-6 footer-1">
+        <div className="col-lg-4 col-md-6 footer-1" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
           <div style={{ display: "flex" }}>
             <div className="footerLogo-outer">
               <img src={footerLogo} alt="footer-logo" />
@@ -30,7 +37,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="col-lg-3 col-md-6 footer-2">
+        <div className="col-lg-3 col-md-6 footer-2" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
           <div className="footer-list-2">
             <h5 style={{ color: "white", visibility: "hidden" }}>empty</h5>
             <ul className="footer-list">
@@ -42,7 +49,7 @@ const Footer = () => {
           </div>
 
         </div>
-        <div className="col-lg-2 col-md-6 footer-3">
+        <div className="col-lg-2 col-md-6 footer-3" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
           <div >
             <h5 className='footer-title'>Need Help?</h5>
             <ul className="footer-list">
@@ -53,7 +60,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="col-lg-3 col-md-6 footer-4">
+        <div className="col-lg-3 col-md-6 footer-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
           <div className="footer-newsletter-outer">
             <h5 className='footer-title'>Subscripe to newsletter</h5>
             <div className="footer-email-outer">
@@ -65,7 +72,7 @@ const Footer = () => {
       </div>
 
       <div className="social-main mt-30 mb-30 ">
-        <div className="social-title-outer" >
+        <div className="social-title-outer" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200" >
           <h5 className="connect-width" style={{ paddingBottom: "10px" }}>Connect With Us</h5>
           <div>
             <div className="social-icon-outer" >

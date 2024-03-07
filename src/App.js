@@ -9,16 +9,17 @@ import AllRoutes from "./router/AllRoutes";
 // import { store } from "./redux/store";
 
 function App() {
-  // aos animation activation
-  useEffect(() => {
-    AOS.init({
-      duration: 1200,
-    });
-  }, []);
+  // // aos animation activation
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 1200,
+  //   });
+  // }, []);
+  AOS.init();
 
   return (
     // <Provider store={store}>
-      <div className="h-100">
+      <div  className="h-100 gyanodhayam-main">
         <AllRoutes />
         <ScrollToTop />
         <ToastContainer />

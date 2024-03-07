@@ -1,17 +1,23 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import img1 from "../../assets/images/testimonial/img-1.jpg";
 import img2 from "../../assets/images/testimonial/img-2.jpg";
 import img3 from "../../assets/images/testimonial/img-3.jpg";
 import img4 from "../../assets/images/testimonial/img-4.jpg";
 import img5 from "../../assets/images/testimonial/img-5.jpg";
 import Pagination from "../../pages/inner-pages/blog/Pagination";
-import { Link } from "react-router-dom";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const SingleGalleryContent = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [photoIndex, setPhotoIndex] = useState(0);
+
+  useEffect(() => {
+    AOS.init(); // Initialize AOS when the component mounts
+  }, []);
+
 
   const handleImageClick = (index) => {
     setPhotoIndex(index);
@@ -97,7 +103,7 @@ const SingleGalleryContent = () => {
               />
             )}
             {datas.map((data, index) => (
-              <div className="col-lg-3 col-md-6" style={{paddingBottom:"20px"}}>
+              <div className="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200" style={{paddingBottom:"20px"}}>
                 <div key={data.id} onClick={() => handleImageClick(index)}>
                   <img src={data.image} alt={`Image ${data.id}`} />
                 </div>
@@ -133,7 +139,7 @@ const SingleGalleryContent = () => {
 
           <div
             className="page-pagination-one pt-30"
-            style={{ display: "flex", justifyContent: "center" }}
+            style={{ display: "flex", justifyContent: "center" }}  data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200"
           >
             <Pagination />
           </div>

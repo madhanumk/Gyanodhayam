@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import jai_guruji1 from "../../assets/images/home/gyanodham.jpg";
 import jai_guruji2 from "../../assets/images/home/courses.jpg";
@@ -9,9 +9,16 @@ import flower_2 from "../../assets/images/flower-2.jpg";
 import flower_3 from "../../assets/images/flower-3.jpg";
 import flower_4 from "../../assets/images/flower-4.jpg";
 import events from "../../assets/images/home/event-bg.jpg";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Hero = () => {
+
+  useEffect(() => {
+    AOS.init(); // Initialize AOS when the component mounts
+  }, []);
+
+
   return (
     <>
       <div className="container">
@@ -19,7 +26,7 @@ const Hero = () => {
         {/* row - 1 */}
 
         <div className="row content-1 flex-column-reverse flex-lg-row ">
-          <div className="col-lg-6 col-md-12 jai-guru-main" >
+          <div className="col-lg-6 col-md-12 jai-guru-main" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
             <div className="jai-guru-1">
               <h3 className="hero-heading-1  theme-mb-0">
                Gyanodhayam
@@ -38,7 +45,7 @@ const Hero = () => {
           </div>
           {/* End .col */}
 
-          <div className="col-lg-6 col-md-12">
+          <div className="col-lg-6 col-md-12" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
             <img src={jai_guruji1} alt="illustration" className="m-auto" />
           </div>
           {/* End .col */}
@@ -48,12 +55,12 @@ const Hero = () => {
         {/* row - 2 */}
 
         <div className="row mt-100 lg-mt-50 content-1 ">
-          <div className="col-lg-6 col-md-12 ">
+          <div className="col-lg-6 col-md-12 "  data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
             <img src={jai_guruji2} alt="illustration" className="m-auto" />
           </div>
           {/* End .col */}
 
-          <div className="col-lg-6 col-md-12 jai-guru-main-2" >
+          <div className="col-lg-6 col-md-12 jai-guru-main-2"  data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200" >
             <div className="jai-guru-2">
               <h3 className="hero-heading-2 font-recoleta theme-mb-0">
                 Our Course
@@ -75,7 +82,7 @@ const Hero = () => {
         {/* row - 3 */}
 
         <div className="row  mt-100 lg-mt-50 content-1 flex-column-reverse flex-lg-row">
-          <div className="col-lg-6 col-md-12 jai-guru-main-3" >
+          <div className="col-lg-6 col-md-12 jai-guru-main-3"   data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
             <div className="jai-guru-3">
               <h3 className="hero-heading-3 font-recoleta theme-mb-0">
                Our Centers
@@ -93,7 +100,7 @@ const Hero = () => {
           </div>
           {/* End .col */}
 
-          <div className="col-lg-6 col-md-12">
+          <div className="col-lg-6 col-md-12"  data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
             <img src={jai_guruji3} alt="illustration" className="m-auto" />
           </div>
           {/* End .col */}
@@ -103,12 +110,12 @@ const Hero = () => {
         {/* row - 4 */}
 
         <div className="row mt-100 lg-mt-50 content-1 ">
-          <div className="col-lg-6 col-md-12">
+          <div className="col-lg-6 col-md-12"  data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
             <img src={jai_guruji4} alt="illustration" className="m-auto" />
           </div>
           {/* End .col */}
 
-          <div className="col-lg-6 col-md-12 jai-guru-main-4" >
+          <div className="col-lg-6 col-md-12 jai-guru-main-4"  data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
             <div className="jai-guru-4">
               <h3 className="hero-heading-4 font-recoleta theme-mb-0">
                Our Initiatives
@@ -130,7 +137,7 @@ const Hero = () => {
 
         {/* events */}
 
-        <div className="row mt-100 lg-mt-50"  style={{overflow:"hidden"}}>
+        <div className="row mt-100 lg-mt-50"  style={{overflow:"hidden"}}  data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
           <div className="col-12 event-main" style={{ backgroundImage: `url(${events})`}}>
             <div className="hover-effect">
               <h3 className="event-title">Announcements & Events</h3>

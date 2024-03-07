@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import qoutes_up from "../../assets/images/quotes-up.svg";
 import qoutes_down from "../../assets/images/quotes-down.svg";
 import footerImage from "../../assets/images/footer-bg.jpg";
 import testmonial from "../../assets/images/home/testimonials.jpg";
 import { Link } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const CounterUp = () => {
   // const [post, setPost] = useState([])
@@ -23,14 +25,17 @@ const CounterUp = () => {
   //   return new Date(dateString).toLocaleDateString(undefined, options);
   // };
 
+  useEffect(() => {
+    AOS.init(); // Initialize AOS when the component mounts
+  }, []);
   return (
     <>
       <div className="container">
         <div className="row">
-          <div className="col-12">
+          <div className="col-12" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
             <h3 className="home-blog-title">Testimonials</h3>
           </div>
-          <div className="col-lg-6 col-md-12 ">
+          <div className="col-lg-6 col-md-12 " data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
             <div className="home-testimonial-img-outer">
               <img
                 src={testmonial}
@@ -39,13 +44,13 @@ const CounterUp = () => {
               />
             </div>
           </div>
-          <div className="col-lg-6 col-md-12 home-testimonial-content-outer">
+          <div className="col-lg-6 col-md-12 home-testimonial-content-outer" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
             <div className="home-testimonial-contents">
               <p className="course2-content">Tharika</p>
               <p className="qoutes-content"
                 style={{
                   fontSize: "30px",
-                  color: "#ff8000",
+                  color: "#ff3000",
                   lineHeight: "36px",
                 }}
               >
@@ -60,9 +65,9 @@ const CounterUp = () => {
         </div>
         <div
           className="mt-100 lg-mt-20" 
-          style={{ display: "flex", justifyContent: "center" }}
+          style={{ display: "flex", justifyContent: "center" }} data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200"
         >
-          <div className="qoutes-outer">
+          <div className="qoutes-outer" >
             <div className="qoutes-up-outer">
               <img src={qoutes_up} alt="qoutes" className="qoutes-up" />
             </div>
@@ -80,7 +85,7 @@ const CounterUp = () => {
           </div>
         </div>
 
-        <div className="mt-100">
+        <div className="mt-100 lg-mt-20" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
           <img src={footerImage} alt="black&white" />
         </div>
       </div>

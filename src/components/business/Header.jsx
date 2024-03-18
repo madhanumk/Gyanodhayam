@@ -37,7 +37,7 @@ const Header = ({ className = "" }) => {
                   </Link>
                 </div>
                 <div className="header-row1-col2">
-                  <p className="find-location" style={{margin:"0px", fontSize:"14px"}}>Find a location</p>
+                  <p className="find-location" style={{margin:"0px", fontSize:"14px"}}>Willing to Participate | <span>Find our centre</span></p>
                 </div>
               </div>
             </div>

@@ -1,13 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import CustomLink from "./CustomLink";
-import logo from "../../../../assets/images/BannerLogo.png"
+import logo from "../../../../assets/images/BannerLogo.png";
+import NavbarImage1 from "../../../../assets/images/menu-img-1.jpg";
+import NavbarImage2 from "../../../../assets/images/menu-img-2.jpg";
 
 const MegaMenuOne = () => {
   return (
     <ul className="navbar-nav">
       <li className="d-block d-lg-none">
-        <div className="logo d-flex justify-content-center" >
+        <div className="logo d-flex justify-content-center">
           <Link to="/">
             <img src={logo} alt="brand identity" width="127" />
           </Link>
@@ -22,7 +24,10 @@ const MegaMenuOne = () => {
           data-bs-auto-close="outside"
           aria-expanded="false"
         > */}
-        <Link to="/"  className="nav-link"> Home</Link>
+        <Link to="/" className="nav-link">
+          {" "}
+          Home
+        </Link>
         {/* </button> */}
         {/* <ul className="dropdown-menu">
           <li className="pb-20">
@@ -51,18 +56,82 @@ const MegaMenuOne = () => {
       {/* End Home dropdown */}
 
       <li className="nav-item dropdown mega-dropdown-md">
-        {/* <button
+        <button
           className="nav-link dropdown-toggle"
           data-bs-toggle="dropdown"
           data-bs-auto-close="outside"
           aria-expanded="false"
-        > */}
-        <Link to='/founder'  className="nav-link">Founder</Link>
-        {/* </button> */}
-        {/* <ul className="dropdown-menu">
+        >
+          {/* <Link to='/founder'  className="nav-link">Founder</Link> */}
+          Founder
+        </button>
+        <ul className="dropdown-menu">
           <li>
             <div className="row">
-              {pagesMegaMenuData.map((item) => (
+              <div
+                className="col-lg-4"
+                style={{ padding: "50px", backgroundColor: "red !important" }}
+              >
+                <h4 className="full-width-navbar-header">
+                  Entire Life to Serving Mankind
+                </h4>
+                <p
+                  className="full-width-navbar-content"
+                  style={{ fontWeight: "bold" }}
+                >
+                  {" "}
+                  <Link to="/founder" >
+                    Detail About Guru
+                  </Link>
+                </p>
+                <div class="dotted-line"></div>
+              </div>
+              <div className="col-lg-4" style={{ padding: "50px" }}>
+                <h4 className="full-width-navbar-header">
+                  Autobiography of a Jai Guruji
+                </h4>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    paddingBottom: "20px",
+                  }}
+                >
+                  <img
+                    style={{ paddingRight: "20px" }}
+                    src={NavbarImage1}
+                    alt="image"
+                  />
+                  <p
+                    className="full-width-navbar-content"
+                    style={{ fontSize: "14px" }}
+                  >
+                    The book that changed the lives of millions! Available in
+                    our 50 languages{" "}
+                  </p>
+                </div>
+                <button className="full-width-navbar-button">
+                  Order your copy today
+                </button>
+              </div>
+              <div className="col-lg-4" style={{ padding: "50px" }}>
+                <h4 className="full-width-navbar-header">
+                  Yoga: a Graceful Journey Inward
+                </h4>
+                <img
+                  src={NavbarImage2}
+                  alt="image"
+                  style={{ paddingBottom: "20px" }}
+                />
+                <p
+                  className="full-width-navbar-content"
+                  style={{ fontSize: "14px" }}
+                >
+                  Watch the video of jai Gurugi{" "}
+                </p>
+              </div>
+
+              {/* {pagesMegaMenuData.map((item) => (
                 <div className="col-lg-4" key={item.id}>
                   <div className="menu-column">
                     <h6 className="mega-menu-title">{item.title}</h6>
@@ -80,10 +149,10 @@ const MegaMenuOne = () => {
                     </ul>
                   </div>
                 </div>
-              ))}
+              ))} */}
             </div>
           </li>
-        </ul> */}
+        </ul>
       </li>
       {/* End about dropdown */}
 
@@ -99,74 +168,59 @@ const MegaMenuOne = () => {
         </button>
         <ul className="dropdown-menu">
           <li>
-              {/* {elementsMegaMenuData.map((item) => (
+            {/* {elementsMegaMenuData.map((item) => (
                 <div key={item.id}> */}
-                  <div className="menu-column">
-                    {/* <h6 className="mega-menu-title">{item.title}</h6> */}
-                    <ul className="style-none mega-dropdown-list">
-                      {/* {item.menuList.map((list, i) => ( */}
-                      <li>
-                          <CustomLink
-                            to="/course"
-                            className="dropdown-item"
-                          >
-                            <span>Courses</span>
-                          </CustomLink>
-                        </li>
-                        <li>
-                          <CustomLink
-                            to="/nanneri"
-                            className="dropdown-item"
-                          >
-                            <span>Nanneri</span>
-                          </CustomLink>
-                        </li>
-                        <li>
-                          <CustomLink
-                            to="/trust-course"
-                            className="dropdown-item"
-                          >
-                            <span>Trust Course</span>
-                          </CustomLink>
-                        </li>
-                        <li>
-                          <CustomLink
-                            to="/first-sem"
-                            className="dropdown-item"
-                          >
-                            <span>First Sem</span>
-                          </CustomLink>
-                        </li>
-                        <li>
-                          <CustomLink
-                            to="/second-sem"
-                            className="dropdown-item"
-                          >
-                            <span>Second Sem</span>
-                          </CustomLink>
-                        </li>
+            <div className="menu-column">
+              {/* <h6 className="mega-menu-title">{item.title}</h6> */}
+              <ul className="style-none mega-dropdown-list">
+                {/* {item.menuList.map((list, i) => ( */}
+                <li>
+                  <CustomLink to="/course" className="dropdown-item">
+                    <span>Courses</span>
+                  </CustomLink>
+                </li>
+                <li>
+                  <CustomLink to="/nanneri" className="dropdown-item">
+                    <span>Nanneri</span>
+                  </CustomLink>
+                </li>
+                <li>
+                  <CustomLink to="/trust-course" className="dropdown-item">
+                    <span>Trust Course</span>
+                  </CustomLink>
+                </li>
+                <li>
+                  <CustomLink to="/first-sem" className="dropdown-item">
+                    <span>First Sem</span>
+                  </CustomLink>
+                </li>
+                <li>
+                  <CustomLink to="/second-sem" className="dropdown-item">
+                    <span>Second Sem</span>
+                  </CustomLink>
+                </li>
 
-                        <li>
-                          <CustomLink
-                            to="/teachers-practice-course"
-                            className="dropdown-item"
-                          >
-                            <span>Teachers Practice Course</span>
-                          </CustomLink>
-                        </li>
-                        
-                        <li>
-                          <CustomLink
-                            to="/guru-practice-course"
-                            className="dropdown-item"
-                          >
-                            <span>Guru Practice Course</span>
-                          </CustomLink>
-                        </li>
-                      {/* ))} */}
-                    </ul>
-                  </div>
-                {/* </div>
+                <li>
+                  <CustomLink
+                    to="/teachers-practice-course"
+                    className="dropdown-item"
+                  >
+                    <span>Teachers Practice Course</span>
+                  </CustomLink>
+                </li>
+
+                <li>
+                  <CustomLink
+                    to="/guru-practice-course"
+                    className="dropdown-item"
+                  >
+                    <span>Guru Practice Course</span>
+                  </CustomLink>
+                </li>
+                {/* ))} */}
+              </ul>
+            </div>
+            {/* </div>
               ))} */}
             {/* End .row */}
           </li>
@@ -211,8 +265,6 @@ const MegaMenuOne = () => {
       </li> */}
       {/* End portfolio dropdown */}
 
-
-
       {/* <li className="nav-item dropdown mega-dropdown-sm">
         <button
           className="nav-link dropdown-toggle"
@@ -251,28 +303,28 @@ const MegaMenuOne = () => {
       {/* End shop dropdown */}
 
       <li className="nav-item dropdown mega-dropdown-md">
-       
-        <Link to='/testimonial'  className="nav-link">Testimonial</Link>
-       
-      </li>     
+        <Link to="/testimonial" className="nav-link">
+          Testimonial
+        </Link>
+      </li>
 
-         <li className="nav-item dropdown mega-dropdown-md">
-       
-        <Link to='/life-in-gyanodhayam'  className="nav-link">Life in Gyanodhayam</Link>
-       
-      </li>       
+      <li className="nav-item dropdown mega-dropdown-md">
+        <Link to="/life-in-gyanodhayam" className="nav-link">
+          Life in Gyanodhayam
+        </Link>
+      </li>
 
-        <li className="nav-item dropdown mega-dropdown-md">
-       
-        <Link to='/gallery'  className="nav-link">Gallery</Link>
-       
-      </li>       
+      <li className="nav-item dropdown mega-dropdown-md">
+        <Link to="/gallery" className="nav-link">
+          Gallery
+        </Link>
+      </li>
 
-        <li className="nav-item dropdown mega-dropdown-md">
-       
-        <Link to='/media'  className="nav-link">media & Press</Link>
-       
-      </li>                  
+      <li className="nav-item dropdown mega-dropdown-md">
+        <Link to="/media" className="nav-link">
+          media & Press
+        </Link>
+      </li>
 
       {/* <li className="nav-item dropdown mega-dropdown-sm">
         <button

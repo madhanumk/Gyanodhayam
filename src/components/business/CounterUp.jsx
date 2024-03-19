@@ -53,7 +53,7 @@ const CounterUp = () => {
               <p className="qoutes-content"
                 style={{
                   fontSize: "30px",
-                  color: "#ff3000",
+                  color: "rgb(245 134 53)",
                   lineHeight: "36px",
                 }}
               >

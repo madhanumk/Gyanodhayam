@@ -68,10 +68,7 @@ const MegaMenuOne = () => {
         <ul className="dropdown-menu">
           <li>
             <div className="row">
-              <div
-                className="col-lg-4"
-                style={{ padding: "50px", backgroundColor: "red !important" }}
-              >
+              <div className="col-lg-4 menus-padding">
                 <h4 className="full-width-navbar-header">
                   Entire Life to Serving Mankind
                 </h4>
@@ -80,23 +77,15 @@ const MegaMenuOne = () => {
                   style={{ fontWeight: "bold" }}
                 >
                   {" "}
-                  <Link to="/founder" >
-                    Detail About Guru
-                  </Link>
+                  <Link to="/founder">Detail About Guru</Link>
                 </p>
                 <div class="dotted-line"></div>
               </div>
-              <div className="col-lg-4" style={{ padding: "50px" }}>
+              <div className="col-lg-4  menus-padding">
                 <h4 className="full-width-navbar-header">
                   Autobiography of a Jai Guruji
                 </h4>
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    paddingBottom: "20px",
-                  }}
-                >
+                <div className="founder-menu-autobiography">
                   <img
                     style={{ paddingRight: "20px" }}
                     src={NavbarImage1}
@@ -114,7 +103,7 @@ const MegaMenuOne = () => {
                   Order your copy today
                 </button>
               </div>
-              <div className="col-lg-4" style={{ padding: "50px" }}>
+              <div className="col-lg-4  menus-padding">
                 <h4 className="full-width-navbar-header">
                   Yoga: a Graceful Journey Inward
                 </h4>
@@ -175,46 +164,58 @@ const MegaMenuOne = () => {
               <ul className="style-none mega-dropdown-list">
                 {/* {item.menuList.map((list, i) => ( */}
                 <li>
-                  <CustomLink to="/course" className="dropdown-item">
-                    <span>Courses</span>
+                  <CustomLink to="/course" className="dropdown-item font-style">
+                    Courses
                   </CustomLink>
                 </li>
                 <li>
-                  <CustomLink to="/nanneri" className="dropdown-item">
-                    <span>Nanneri</span>
+                  <CustomLink
+                    to="/nanneri"
+                    className="dropdown-item font-style"
+                  >
+                    Nanneri
                   </CustomLink>
                 </li>
                 <li>
-                  <CustomLink to="/trust-course" className="dropdown-item">
-                    <span>Trust Course</span>
+                  <CustomLink
+                    to="/trust-course"
+                    className="dropdown-item font-style"
+                  >
+                    Trust Course
                   </CustomLink>
                 </li>
                 <li>
-                  <CustomLink to="/first-sem" className="dropdown-item">
-                    <span>First Sem</span>
+                  <CustomLink
+                    to="/first-sem"
+                    className="dropdown-item font-style"
+                  >
+                    First Sem
                   </CustomLink>
                 </li>
                 <li>
-                  <CustomLink to="/second-sem" className="dropdown-item">
-                    <span>Second Sem</span>
+                  <CustomLink
+                    to="/second-sem"
+                    className="dropdown-item font-style"
+                  >
+                    Second Sem
                   </CustomLink>
                 </li>
 
                 <li>
                   <CustomLink
                     to="/teachers-practice-course"
-                    className="dropdown-item"
+                    className="dropdown-item font-style"
                   >
-                    <span>Teachers Practice Course</span>
+                    Teachers Practice Course
                   </CustomLink>
                 </li>
 
                 <li>
                   <CustomLink
                     to="/guru-practice-course"
-                    className="dropdown-item"
+                    className="dropdown-item font-style"
                   >
-                    <span>Guru Practice Course</span>
+                    Guru Practice Course
                   </CustomLink>
                 </li>
                 {/* ))} */}

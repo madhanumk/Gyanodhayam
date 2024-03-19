@@ -13043,6 +13043,19 @@ color: white;
   background-color: #ffead9;
 }
 
+.font-style{
+  font-family: "archerpromedium";
+}
+
+.menus-padding{
+  padding: 50px;
+}
+
+.founder-menu-autobiography{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
 
 @media(max-width:992px) {
   .home-testimonial-img-outer{
@@ -13072,5 +13085,23 @@ color: white;
   
   .testimonial-img-outer{
    padding: 0px 0px 20px 0px;
+  }
+
+  .navbar [class*=mega-dropdown] .row [class*=col-]{
+border-bottom: 1px solid  #ffead9;  }
+
+.menus-padding{
+  padding: 30px 20px;
+}
+
+}
+
+@media(max-width:500px) {
+  .founder-menu-autobiography{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
   }
 }

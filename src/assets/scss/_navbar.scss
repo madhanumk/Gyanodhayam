@@ -489,7 +489,7 @@
 		max-height: 100vh;
 		overflow-y: auto;
 		clear: both;
-		width: 250px;
+		width: 350px;
 		max-width: calc(100vw - 50px);
 		z-index: 9999;
 		transform: translateX(-100%);
@@ -526,7 +526,7 @@
 		border: none;
 		padding: 0;
 		border-radius: 0;
-		background: var(--light-blue);
+		background:  #fff8f3;
 	}
 
 	.navbar .dropdown-submenu .dropdown-menu {

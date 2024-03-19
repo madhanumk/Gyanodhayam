@@ -2,10 +2,10 @@ import React from "react";
 import Sidebar from "../../components/common/header/sidebar/Sidebar";
 import Header from "../../components/business/Header";
 import Seo from "../../components/common/seo/Seo";
-import homeBanner from "../../assets/images/Banner.jpg";
-import bannerLogo from "../../assets/images/BannerLogo.png";
+// import homeBanner from "../../assets/images/Banner.jpg";
+// import bannerLogo from "../../assets/images/BannerLogo.png";
 import Footer from "../../components/business/Footer";
-import FounderContent from "../../components/Founder/FounderContent";
+// import FounderContent from "../../components/Founder/FounderContent";
 import GalleryContent from "../../components/Gallery/GalleryContent";
 import GalleryBanner from "../../components/Gallery/GalleryBanner";
 

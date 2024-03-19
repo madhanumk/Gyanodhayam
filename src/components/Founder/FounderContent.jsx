@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState} from "react";
 import jai_guruji1 from "../../assets/images/sec-1.jpg";
 import flower_1 from "../../assets/images/flower-1.jpg";
 import flower_2 from "../../assets/images/flower-2.jpg";

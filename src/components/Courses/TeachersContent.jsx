@@ -1,6 +1,6 @@
 import React from "react";
 import jai_guruji1 from "../../assets/images/sec-1.jpg";
-import nanneri from "../../assets/images/Courses/education/img-nanneri/img-1.jpg";
+// import nanneri from "../../assets/images/Courses/education/img-nanneri/img-1.jpg";
 import flower_1 from "../../assets/images/flower-1.jpg";
 import flower_2 from "../../assets/images/flower-2.jpg";
 import teachers from "../../assets/images/Courses/Imgs/img-4.jpg";

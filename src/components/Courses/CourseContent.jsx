@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, {  useRef, useState } from "react";
 import nanneri from "../../assets/images/Courses/Imgs/img-1.jpg";
 import trust from "../../assets/images/Courses/Imgs/img-2.jpg";
 import motivation from "../../assets/images/Courses/Imgs/img-3.jpg";
@@ -6,7 +6,7 @@ import teachers from "../../assets/images/Courses/Imgs/img-4.jpg";
 import guru from "../../assets/images/Courses/Imgs/img-5.jpg";
 import flower_1 from "../../assets/images/flower-1.jpg";
 import flower_2 from "../../assets/images/flower-2.jpg";
-import flower_3 from "../../assets/images/flower-3.jpg";
+// import flower_3 from "../../assets/images/flower-3.jpg";
 import flower_4 from "../../assets/images/flower-4.jpg";
 import homeBanner from "../../assets/images/Banner.jpg";
 import bannerLogo from "../../assets/images/BannerLogo.png";

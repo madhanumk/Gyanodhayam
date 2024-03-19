@@ -2,7 +2,7 @@ import React from "react";
 import banner from "../../assets/images/media/img_63.jpg";
 import Sidebar from "../../components/common/header/sidebar/Sidebar";
 import Header from "../../components/business/Header";
-import Address from "../../components/common/address/Address";
+// import Address from "../../components/common/address/Address";
 import FromStyleThree from "../../components/common/contact/FromStyleThree";
 import Seo from "../../components/common/seo/Seo";
 import Footer from "../../components/business/Footer";

@@ -9,8 +9,7 @@ import kelvi from "../../assets/images/Courses/education/course-1st-sem/img-6.jp
 import unmai from "../../assets/images/Courses/education/course-1st-sem/img-7.jpg";
 import nalam_vazha from "../../assets/images/Courses/education/course-1st-sem/img-8.jpg";
 import udal_payirchi from "../../assets/images/Courses/education/course-1st-sem/img-9.jpg";
-import muthiraigal from "../../assets/images/Courses/education/course-1st-sem/img-10.jpg";
-import aasana from "../../assets/images/Courses/education/course-1st-sem/img-11.jpg";
+
 
 import flower_1 from "../../assets/images/flower-1.jpg";
 import flower_2 from "../../assets/images/flower-2.jpg";

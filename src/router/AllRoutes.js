@@ -19,43 +19,43 @@ import BlogDetailsV2 from "../pages/inner-pages/blog/blog-details/BlogDetailsV2"
 import BlogDetailsV3 from "../pages/inner-pages/blog/blog-details/BlogDetailsV3";
 import DynamicBlogDetails from "../pages/inner-pages/blog/blog-details/DynamicBlogDetails";
 import Contact from "../pages/contact/Contact";
-import PortfolioV1 from "../pages/inner-pages/portfolio/boxed-layout/PortfolioV1";
-import PortfolioV2 from "../pages/inner-pages/portfolio/boxed-layout/PortfolioV2";
-import PortfolioV3 from "../pages/inner-pages/portfolio/boxed-layout/PortfolioV3";
-import PortfolioV4 from "../pages/inner-pages/portfolio/boxed-layout/PortfolioV4";
-import PortfolioV5 from "../pages/inner-pages/portfolio/boxed-layout/PortfolioV5";
-import PortfolioV6 from "../pages/inner-pages/portfolio/boxed-layout/PortfolioV6";
-import PortfolioV7 from "../pages/inner-pages/portfolio/boxed-layout/PortfolioV7";
-import PortfolioV8 from "../pages/inner-pages/portfolio/boxed-layout/PortfolioV8";
-import PortfolioV9 from "../pages/inner-pages/portfolio/boxed-layout/PortfolioV9";
-import PortfolioV10 from "../pages/inner-pages/portfolio/boxed-layout/PortfolioV10";
-import PortfolioV11 from "../pages/inner-pages/portfolio/boxed-layout/PortfolioV11";
-import PortfolioV12 from "../pages/inner-pages/portfolio/boxed-layout/PortfolioV12";
-import PortfolioV13 from "../pages/inner-pages/portfolio/fullwidth-layout/PortfolioV13";
-import PortfolioV14 from "../pages/inner-pages/portfolio/fullwidth-layout/PortfolioV14";
-import PortfolioV15 from "../pages/inner-pages/portfolio/fullwidth-layout/PortfolioV15";
-import PortfolioV16 from "../pages/inner-pages/portfolio/fullwidth-layout/PortfolioV16";
-import PortfolioV17 from "../pages/inner-pages/portfolio/fullwidth-layout/PortfolioV17";
-import PortfolioV18 from "../pages/inner-pages/portfolio/fullwidth-layout/PortfolioV18";
-import PortfolioV19 from "../pages/inner-pages/portfolio/fullwidth-layout/PortfolioV19";
-import PortfolioV20 from "../pages/inner-pages/portfolio/fullwidth-layout/PortfolioV20";
-import PortfolioV21 from "../pages/inner-pages/portfolio/fullwidth-layout/PortfolioV21";
-import PortfolioV22 from "../pages/inner-pages/portfolio/dark-layout/PortfolioV22";
+// import PortfolioV1 from "../pages/inner-pages/portfolio/boxed-layout/PortfolioV1";
+// import PortfolioV2 from "../pages/inner-pages/portfolio/boxed-layout/PortfolioV2";
+// import PortfolioV3 from "../pages/inner-pages/portfolio/boxed-layout/PortfolioV3";
+// import PortfolioV4 from "../pages/inner-pages/portfolio/boxed-layout/PortfolioV4";
+// import PortfolioV5 from "../pages/inner-pages/portfolio/boxed-layout/PortfolioV5";
+// import PortfolioV6 from "../pages/inner-pages/portfolio/boxed-layout/PortfolioV6";
+// import PortfolioV7 from "../pages/inner-pages/portfolio/boxed-layout/PortfolioV7";
+// import PortfolioV8 from "../pages/inner-pages/portfolio/boxed-layout/PortfolioV8";
+// import PortfolioV9 from "../pages/inner-pages/portfolio/boxed-layout/PortfolioV9";
+// import PortfolioV10 from "../pages/inner-pages/portfolio/boxed-layout/PortfolioV10";
+// import PortfolioV11 from "../pages/inner-pages/portfolio/boxed-layout/PortfolioV11";
+// import PortfolioV12 from "../pages/inner-pages/portfolio/boxed-layout/PortfolioV12";
+// import PortfolioV13 from "../pages/inner-pages/portfolio/fullwidth-layout/PortfolioV13";
+// import PortfolioV14 from "../pages/inner-pages/portfolio/fullwidth-layout/PortfolioV14";
+// import PortfolioV15 from "../pages/inner-pages/portfolio/fullwidth-layout/PortfolioV15";
+// import PortfolioV16 from "../pages/inner-pages/portfolio/fullwidth-layout/PortfolioV16";
+// import PortfolioV17 from "../pages/inner-pages/portfolio/fullwidth-layout/PortfolioV17";
+// import PortfolioV18 from "../pages/inner-pages/portfolio/fullwidth-layout/PortfolioV18";
+// import PortfolioV19 from "../pages/inner-pages/portfolio/fullwidth-layout/PortfolioV19";
+// import PortfolioV20 from "../pages/inner-pages/portfolio/fullwidth-layout/PortfolioV20";
+// import PortfolioV21 from "../pages/inner-pages/portfolio/fullwidth-layout/PortfolioV21";
+// import PortfolioV22 from "../pages/inner-pages/portfolio/dark-layout/PortfolioV22";
 
 // import PortfolioDetailsV1 from "../pages/inner-pages/portfolio/single-portfolio/PortfolioDetailsV1";
-import PortfolioDetailsV2 from "../pages/inner-pages/portfolio/single-portfolio/PortfolioDetailsV2";
-import PortfolioDetailsV3 from "../pages/inner-pages/portfolio/single-portfolio/PortfolioDetailsV3";
-import PortfolioDetailsV4 from "../pages/inner-pages/portfolio/single-portfolio/PortfolioDetailsV4";
-import PortfolioDetailsV5 from "../pages/inner-pages/portfolio/single-portfolio/PortfolioDetailsV5";
-import PortfolioDetailsV6 from "../pages/inner-pages/portfolio/single-portfolio/PortfolioDetailsV6";
-import PortfolioV23 from "../pages/inner-pages/portfolio/dark-layout/PortfolioV23";
-import PortfolioV24 from "../pages/inner-pages/portfolio/dark-layout/PortfolioV24";
-import PortfolioV25 from "../pages/inner-pages/portfolio/dark-layout/PortfolioV25";
-import PortfolioV26 from "../pages/inner-pages/portfolio/dark-layout/PortfolioV26";
-import PortfolioV27 from "../pages/inner-pages/portfolio/dark-layout/PortfolioV27";
-import PortfolioV28 from "../pages/inner-pages/portfolio/dark-layout/PortfolioV28";
-import PortfolioV29 from "../pages/inner-pages/portfolio/dark-layout/PortfolioV29";
-import PortfolioV30 from "../pages/inner-pages/portfolio/dark-layout/PortfolioV30";
+// import PortfolioDetailsV2 from "../pages/inner-pages/portfolio/single-portfolio/PortfolioDetailsV2";
+// import PortfolioDetailsV3 from "../pages/inner-pages/portfolio/single-portfolio/PortfolioDetailsV3";
+// import PortfolioDetailsV4 from "../pages/inner-pages/portfolio/single-portfolio/PortfolioDetailsV4";
+// import PortfolioDetailsV5 from "../pages/inner-pages/portfolio/single-portfolio/PortfolioDetailsV5";
+// import PortfolioDetailsV6 from "../pages/inner-pages/portfolio/single-portfolio/PortfolioDetailsV6";
+// import PortfolioV23 from "../pages/inner-pages/portfolio/dark-layout/PortfolioV23";
+// import PortfolioV24 from "../pages/inner-pages/portfolio/dark-layout/PortfolioV24";
+// import PortfolioV25 from "../pages/inner-pages/portfolio/dark-layout/PortfolioV25";
+// import PortfolioV26 from "../pages/inner-pages/portfolio/dark-layout/PortfolioV26";
+// import PortfolioV27 from "../pages/inner-pages/portfolio/dark-layout/PortfolioV27";
+// import PortfolioV28 from "../pages/inner-pages/portfolio/dark-layout/PortfolioV28";
+// import PortfolioV29 from "../pages/inner-pages/portfolio/dark-layout/PortfolioV29";
+// import PortfolioV30 from "../pages/inner-pages/portfolio/dark-layout/PortfolioV30";
 // import Introduction from "../pages/introduction/Introduction";
 // import Founders from "../pages/founder/Founters";
 import Founder from "../pages/founder/Founder";
@@ -89,7 +89,7 @@ const AllRoutes = () => {
         <Route path="/guru-practice-course" element={<Guru/>} />
         <Route path="/special-days" element={<SpecialDays />} />
 
-        <Route path="/portfolio-v1" element={<PortfolioV1 />} />
+        {/* <Route path="/portfolio-v1" element={<PortfolioV1 />} />
         <Route path="/portfolio-v2" element={<PortfolioV2 />} />
         <Route path="/portfolio-v3" element={<PortfolioV3 />} />
         <Route path="/portfolio-v4" element={<PortfolioV4 />} />
@@ -118,15 +118,15 @@ const AllRoutes = () => {
         <Route path="/portfolio-v27" element={<PortfolioV27 />} />
         <Route path="/portfolio-v28" element={<PortfolioV28 />} />
         <Route path="/portfolio-v29" element={<PortfolioV29 />} />
-        <Route path="/portfolio-v30" element={<PortfolioV30 />} />
+        <Route path="/portfolio-v30" element={<PortfolioV30 />} /> */}
 
         {/* Single Portfolio Details  */}
         {/* <Route path="/portfolio-details-v1" element={<PortfolioDetailsV1 />} /> */}
-        <Route path="/portfolio-details-v2" element={<PortfolioDetailsV2 />} />
+        {/* <Route path="/portfolio-details-v2" element={<PortfolioDetailsV2 />} />
         <Route path="/portfolio-details-v3" element={<PortfolioDetailsV3 />} />
         <Route path="/portfolio-details-v4" element={<PortfolioDetailsV4 />} />
         <Route path="/portfolio-details-v5" element={<PortfolioDetailsV5 />} />
-        <Route path="/portfolio-details-v6" element={<PortfolioDetailsV6 />} />
+        <Route path="/portfolio-details-v6" element={<PortfolioDetailsV6 />} /> */}
 
         <Route path="/founder" element={<Founder />} />
 

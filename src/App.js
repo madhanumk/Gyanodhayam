@@ -1,7 +1,7 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "slick-carousel/slick/slick.css";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import { ToastContainer } from "react-toastify";
 import ScrollToTop from "./components/elements/ScrollToTop";
 import AllRoutes from "./router/AllRoutes";

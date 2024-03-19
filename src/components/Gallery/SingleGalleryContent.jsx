@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import img1 from "../../assets/images/testimonial/img-1.jpg";
-import img2 from "../../assets/images/testimonial/img-2.jpg";
-import img3 from "../../assets/images/testimonial/img-3.jpg";
-import img4 from "../../assets/images/testimonial/img-4.jpg";
-import img5 from "../../assets/images/testimonial/img-5.jpg";
+import img1 from "../../assets/images/photos/img-1.jpg";
+import img2 from "../../assets/images/photos/img-2.jpg";
+import img3 from "../../assets/images/photos/img-3.jpg";
+import img4 from "../../assets/images/photos/img-4.jpg";
+import img5 from "../../assets/images/photos/img-5.jpg";
 import Pagination from "../../pages/inner-pages/blog/Pagination";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";

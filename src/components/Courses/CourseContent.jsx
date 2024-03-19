@@ -84,6 +84,9 @@ const CourseContent = () => {
                     }
                     style={{ marginBottom: "8px" }}
                   >
+                      {
+                      activeTab === "Nanneri" ? <i className="nanneri-line" style={{ backgroundColor: "#f58635" }}></i> : null
+                    }
                     <a href="#nanneri">Nanneri</a>
                   </li>
 
@@ -101,6 +104,9 @@ const CourseContent = () => {
                     }`}
                     style={{ marginBottom: "8px" }}
                   >
+                     {
+                      activeTab === "Gyanodhayam Educational Trust Certificate Course" ? <i className="trust-line" style={{ backgroundColor: "#f58635" }}></i> : null
+                    }
                     <a href="#educational-trust">
                       {" "}
                       Gyanodhayam Educational Trust Certificate Course
@@ -121,6 +127,9 @@ const CourseContent = () => {
                     }`}
                     style={{ marginBottom: "8px" }}
                   >
+                     {
+                      activeTab === "Gyanodhayam Educational Trust Motivation Class (Degree)" ? <i className="Motivation-line" style={{ backgroundColor: "#f58635" }}></i> : null
+                    }
                     <a href="#motivation">
                       Gyanodhayam Educational Trust Motivation Class (Degree)
                     </a>
@@ -135,6 +144,9 @@ const CourseContent = () => {
                     }`}
                     style={{ marginBottom: "8px" }}
                   >
+                     {
+                      activeTab === "Teachers Practice Course" ? <i className="Teachers-line" style={{ backgroundColor: "#f58635" }}></i> : null
+                    }
                     <a href="#teachers">Teachers Practice Course</a>
                   </li>
 
@@ -147,6 +159,9 @@ const CourseContent = () => {
                     }`}
                     style={{ marginBottom: "8px" }}
                   >
+                      {
+                      activeTab === "Guru Practice Course" ? <i className="Guru-line" style={{ backgroundColor: "#f58635" }}></i> : null
+                    }
                     <a href="#guru"> Guru Practice Course</a>
                   </li>
                 </ul>

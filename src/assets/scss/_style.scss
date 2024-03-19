@@ -14,6 +14,8 @@
 ====================================================================
 
  ***/
+
+
 .ctn-preloader {
   align-items: center;
   -webkit-align-items: center;
@@ -13057,6 +13059,359 @@ color: white;
   padding-bottom: 20px;
 }
 
+.image-container {
+  overflow: hidden; /* Hide overflowing parts of the image */
+  position: relative; /* Relative positioning for absolutely positioned elements inside */
+}
+
+.image-container img {
+  transition: transform 0.3s ease; /* Add transition for smooth zoom effect */
+}
+
+.image-container:hover img {
+  transform: scale(1.1); /* Increase the scale on hover to zoom in */
+}
+
+.line-1{
+  position: absolute;
+    width: 100px;
+    height: 1px;
+    background-color: #de6a10;
+    top: 50%;
+    right: unset;
+    left: -50px;
+    transition: .3s;
+}
+
+.line-2{
+  position: absolute;
+    width: 100px;
+    height: 1px;
+    background-color: #de6a10;
+    top: 50%;
+    right: unset;
+    right: -50px;
+    transition: .3s;
+}
+
+
+// founder menu side line
+.founder-line{
+  position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: #de6a10;
+    top: 10%;
+    right: unset;
+    left: -60px;
+    transition: .3s;
+}
+
+.life-journey{
+  position: absolute;
+  width: 50px;
+  height: 1px;
+  background-color: #de6a10;
+  top: 37%;
+  right: unset;
+  left: -60px;
+  transition: .3s;
+}
+
+.book{
+  position: absolute;
+  width: 50px;
+  height: 1px;
+  background-color: #de6a10;
+  top: 63%;
+  right: unset;
+  left: -60px;
+  transition: .3s;
+}
+
+.article{
+  position: absolute;
+  width: 50px;
+  height: 1px;
+  background-color: #de6a10;
+  top: 90%;
+  right: unset;
+  left: -60px;
+  transition: .3s;
+}
+
+
+
+// course menu side line
+.nanneri-line{
+  position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: #de6a10;
+    top: 6%;
+    right: unset;
+    left: -60px;
+    transition: .3s;
+}
+
+.trust-line{
+  position: absolute;
+  width: 50px;
+  height: 1px;
+  background-color: #de6a10;
+  top: 28%;
+  right: unset;
+  left: -60px;
+  transition: .3s;
+}
+
+.Motivation-line{
+  position: absolute;
+  width: 50px;
+  height: 1px;
+  background-color: #de6a10;
+  top: 57%;
+  right: unset;
+  left: -60px;
+  transition: .3s;
+}
+
+.Teachers-line{
+  position: absolute;
+  width: 50px;
+  height: 1px;
+  background-color: #de6a10;
+  top: 78%;
+  right: unset;
+  left: -60px;
+  transition: .3s;
+}
+
+.Guru-line{
+  position: absolute;
+  width: 50px;
+  height: 1px;
+  background-color: #de6a10;
+  top: 95%;
+  right: unset;
+  left: -60px;
+  transition: .3s;
+}
+
+
+
+// trtust course section side menu line 
+
+.body-line{
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: #de6a10;
+    top: 3%;
+    right: unset;
+    left: -60px;
+    transition: .3s;
+  }
+
+  .yoga-line{
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: #de6a10;
+    top: 11%;
+    right: unset;
+    left: -60px;
+    transition: .3s;
+  }
+
+  .food-line{
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: #de6a10;
+    top: 18.5%;
+    right: unset;
+    left: -60px;
+    transition: .3s;
+  }
+
+  .mind-line{
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: #de6a10;
+    top: 26.5%;
+    right: unset;
+    left: -60px;
+    transition: .3s;
+  }
+  .characters-line{
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: #de6a10;
+    top: 34.5%;
+    right: unset;
+    left: -60px;
+    transition: .3s;
+  }
+
+  .meditation-line{
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: #de6a10;
+    top: 42%;
+    right: unset;
+    left: -60px;
+    transition: .3s;
+  }
+
+  .relationship-line{
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: #de6a10;
+    top: 50%;
+    right: unset;
+    left: -60px;
+    transition: .3s;
+  }
+
+  .karma-line{
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: #de6a10;
+    top: 58%;
+    right: unset;
+    left: -60px;
+    transition: .3s;
+  }
+
+  .soul-line{
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: #de6a10;
+    top: 66%;
+    right: unset;
+    left: -60px;
+    transition: .3s;
+  }
+
+  .nobleness-line{
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: #de6a10;
+    top: 74%;
+    right: unset;
+    left: -60px;
+    transition: .3s;
+  }
+
+  .arts-line{
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: #de6a10;
+    top: 81.5%;
+    right: unset;
+    left: -60px;
+    transition: .3s;
+  }
+
+  .services-line{
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: #de6a10;
+    top: 89.5%;
+    right: unset;
+    left: -60px;
+    transition: .3s;
+  }
+
+  .mounam-line{
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: #de6a10;
+    top: 97.5%;
+    right: unset;
+    left: -60px;
+    transition: .3s;
+  }
+
+
+  // media &press side menu line 
+  .music-line{
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: #de6a10;
+    top: 6.5%;
+    right: unset;
+    left: -60px;
+    transition: .3s;
+  }
+
+  .audio-line{
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: #de6a10;
+    top: 24%;
+    right: unset;
+    left: -60px;
+    transition: .3s;
+  }
+
+  .video-line{
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: #de6a10;
+    top: 41%;
+    right: unset;
+    left: -60px;
+    transition: .3s;
+  }
+
+  .calendar-line{
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: #de6a10;
+    top: 58.5%;
+    right: unset;
+    left: -60px;
+    transition: .3s;
+  }
+
+  .social-media-line{
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: #de6a10;
+    top:76.5%;
+    right: unset;
+    left: -60px;
+    transition: .3s;
+  }
+
+  .contact-line{
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: #de6a10;
+    top:93.5%;
+    right: unset;
+    left: -60px;
+    transition: .3s;
+  }
+
 @media(max-width:992px) {
   .home-testimonial-img-outer{
     display: block;
@@ -13094,6 +13449,30 @@ border-bottom: 1px solid  #ffead9;  }
   padding: 30px 20px;
 }
 
+.line-1{
+  position: absolute;
+    width: 2px;
+    height: 75px;
+    background-color: #de6a10;
+    bottom: 0px;
+    right: unset;
+    left: 50%;
+    transition: .3s;
+    top: 92%;
+}
+
+.line-2{
+  position: absolute;
+    width: 2px;
+    height: 75px;
+    background-color: #de6a10;
+    bottom: 0px;
+    right: unset;
+    right: 50%;
+    transition: .3s;
+    top: 92%;
+}
+
 }
 
 @media(max-width:500px) {
@@ -13104,4 +13483,31 @@ border-bottom: 1px solid  #ffead9;  }
     flex-direction: column;
     align-items: center;
   }
+
+  .line-1{
+    position: absolute;
+      width: 2px;
+      height: 50px;
+      background-color: #de6a10;
+      bottom: 0px;
+      right: unset;
+      left: 50%;
+      transition: .3s;
+      top: 92%;
+  }
+  
+  .line-2{
+    position: absolute;
+      width: 2px;
+      height: 50px;
+      background-color: #de6a10;
+      bottom: 0px;
+      right: unset;
+      right: 50%;
+      transition: .3s;
+      top: 92%;
+  }
 }
+
+
+

@@ -90,6 +90,9 @@ const Courses2 = () => {
                     }
                     style={{ marginBottom: "8px" }}
                   >
+                      {
+                      activeTab === "Body" ? <i className="body-line" style={{ backgroundColor: "#f58635" }}></i> : null
+                    }
                     <a href="#body">Body</a>
                   </li>
                   <li
@@ -101,6 +104,9 @@ const Courses2 = () => {
                     }
                     style={{ marginBottom: "8px" }}
                   >
+                    {
+                      activeTab === "Exercises/Yoga" ? <i className="yoga-line" style={{ backgroundColor: "#f58635" }}></i> : null
+                    }
                     <a href="#exercises-yoga">Exercises/Yoga</a>
                   </li>
                   <li
@@ -112,6 +118,9 @@ const Courses2 = () => {
                     }
                     style={{ marginBottom: "8px" }}
                   >
+                      {
+                      activeTab === "Food Habits" ? <i className="food-line" style={{ backgroundColor: "#f58635" }}></i> : null
+                    }
                     <a href="#food"> Food Habits</a>
                   </li>
                   <li
@@ -123,6 +132,9 @@ const Courses2 = () => {
                     }
                     style={{ marginBottom: "8px" }}
                   >
+                    {
+                      activeTab === "Mind" ? <i className="mind-line" style={{ backgroundColor: "#f58635" }}></i> : null
+                    }
                     <a href="#mind"> Mind</a>
                   </li>
                   <li
@@ -134,6 +146,9 @@ const Courses2 = () => {
                     }
                     style={{ marginBottom: "8px" }}
                   >
+                      {
+                      activeTab === "Characters" ? <i className="characters-line" style={{ backgroundColor: "#f58635" }}></i> : null
+                    }
                     <a href="#characters">Characters</a>
                   </li>
                   <li
@@ -145,6 +160,9 @@ const Courses2 = () => {
                     }
                     style={{ marginBottom: "8px" }}
                   >
+                    {
+                      activeTab === "Meditation" ? <i className="meditation-line" style={{ backgroundColor: "#f58635" }}></i> : null
+                    }
                     <a href="#meditation">Meditation</a>
                   </li>
 
@@ -157,6 +175,9 @@ const Courses2 = () => {
                     }
                     style={{ marginBottom: "8px" }}
                   >
+                      {
+                      activeTab === "Relationship" ? <i className="relationship-line" style={{ backgroundColor: "#f58635" }}></i> : null
+                    }
                     <a href="#relationship">Relationship</a>
                   </li>
                   <li
@@ -168,6 +189,9 @@ const Courses2 = () => {
                     }
                     style={{ marginBottom: "8px" }}
                   >
+                     {
+                      activeTab === "Karma" ? <i className="karma-line" style={{ backgroundColor: "#f58635" }}></i> : null
+                    }
                     <a href="#karma">Karma</a>
                   </li>
                   <li
@@ -179,6 +203,9 @@ const Courses2 = () => {
                     }
                     style={{ marginBottom: "8px" }}
                   >
+                     {
+                      activeTab === "Soul" ? <i className="soul-line" style={{ backgroundColor: "#f58635" }}></i> : null
+                    }
                     <a href="#soul">Soul</a>
                   </li>
                   <li
@@ -190,6 +217,9 @@ const Courses2 = () => {
                     }
                     style={{ marginBottom: "8px" }}
                   >
+                      {
+                      activeTab === "Nobleness" ? <i className="nobleness-line" style={{ backgroundColor: "#f58635" }}></i> : null
+                    }
                     <a href="#nobleness">Nobleness</a>
                   </li>
                   <li
@@ -201,6 +231,9 @@ const Courses2 = () => {
                     }
                     style={{ marginBottom: "8px" }}
                   >
+                      {
+                      activeTab === "Arts" ? <i className="arts-line" style={{ backgroundColor: "#f58635" }}></i> : null
+                    }
                     <a href="#arts">Arts</a>
                   </li>
                   <li
@@ -212,6 +245,9 @@ const Courses2 = () => {
                     }
                     style={{ marginBottom: "8px" }}
                   >
+                      {
+                      activeTab === "Services" ? <i className="services-line" style={{ backgroundColor: "#f58635" }}></i> : null
+                    }
                     <a href="#services">Services</a>
                   </li>
                   <li
@@ -223,6 +259,9 @@ const Courses2 = () => {
                     }
                     style={{ marginBottom: "8px" }}
                   >
+                     {
+                      activeTab === "Mounam" ? <i className="mounam-line" style={{ backgroundColor: "#f58635" }}></i> : null
+                    }
                     <a href="#mounam">Mounam(Silence)</a>
                   </li>
                 </ul>

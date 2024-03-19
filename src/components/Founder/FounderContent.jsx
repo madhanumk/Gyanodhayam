@@ -60,6 +60,9 @@ const FounderContent = () => {
                     }
                     style={{ marginBottom: "8px" }}
                   >
+                    {
+                      activeTab === "Our Founder" ? <i className="founder-line" style={{ backgroundColor: "#f58635" }}></i> : null
+                    }
                     <a href="#founder">Our Founder</a>
                   </li>
 
@@ -72,6 +75,9 @@ const FounderContent = () => {
                     }`}
                     style={{ marginBottom: "8px" }}
                   >
+                    {
+                      activeTab === "His Life Journey" ? <i className="life-journey" style={{ backgroundColor: "#f58635" }}></i> : null
+                    }
                     <a href="#journey">His Life Journey</a>
                   </li>
 
@@ -84,6 +90,9 @@ const FounderContent = () => {
                     }`}
                     style={{ marginBottom: "8px" }}
                   >
+                    {
+                      activeTab === " Books & Speech" ? <i className="book" style={{ backgroundColor: "#f58635" }}></i> : null
+                    }
                     <a href="#book">Books & Speech</a>
                   </li>
 
@@ -96,6 +105,9 @@ const FounderContent = () => {
                     }`}
                     style={{ marginBottom: "8px" }}
                   >
+                    {
+                      activeTab === "Article" ? <i className="article" style={{ backgroundColor: "#f58635" }}></i> : null
+                    }
                     <a href="#article">Article</a>
                   </li>
                 </ul>

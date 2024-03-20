@@ -2,8 +2,8 @@ import React from "react";
 import footerImg from "../../../../assets/images/assets/ils_03.png";
 import Sidebar from "../../../../components/common/header/sidebar/Sidebar";
 import Header from "../../../../components/business/Header";
-import Blog from "../../../../components/blog/Blog";
-import BlogSidebar from "../../../../components/blog/BlogSidebar";
+// import Blog from "../../../../components/blog/Blog";
+// import BlogSidebar from "../../../../components/blog/BlogSidebar";
 import Pagination from "../Pagination";
 import CopyrightFooter from "../../../../components/common/footer/CopyrightFooter";
 import FooterMenuList from "../../../../components/common/footer/FooterMenuList";
@@ -14,8 +14,8 @@ import { Link } from "react-router-dom";
 import elementum from "../../../../assets/images/testimonial/img-1.jpg";
 import gravida from "../../../../assets/images/testimonial/img-2.jpg";
 import faucibus from "../../../../assets/images/testimonial/img-3.jpg";
-import turpis from "../../../../assets/images/testimonial/img-4.jpg";
-import faucibus_nisl from "../../../../assets/images/testimonial/img-5.jpg";
+// import turpis from "../../../../assets/images/testimonial/img-4.jpg";
+// import faucibus_nisl from "../../../../assets/images/testimonial/img-5.jpg";
 
 const BlogV1 = () => {
   return (

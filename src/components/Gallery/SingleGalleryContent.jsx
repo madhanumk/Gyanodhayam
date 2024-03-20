@@ -105,7 +105,7 @@ const SingleGalleryContent = () => {
             {datas.map((data, index) => (
               <div className="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200" style={{paddingBottom:"20px"}}>
                 <div key={data.id} onClick={() => handleImageClick(index)}>
-                  <img src={data.image} alt={`Image ${data.id}`} />
+                  <img src={data.image} alt={`gallery ${data.id}`} />
                 </div>
               </div>
             ))}

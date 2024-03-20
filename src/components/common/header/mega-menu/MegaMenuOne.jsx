@@ -323,7 +323,7 @@ const MegaMenuOne = () => {
 
       <li className="nav-item dropdown mega-dropdown-md">
         <Link to="/media" className="nav-link">
-          media & Press
+          Media & Press
         </Link>
       </li>
 
